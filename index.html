@@ -1,0 +1,2322 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEC Aspirants - সেন্ট্রাল অ্যাডমিশন ২০২৬-২৭ | সরকারি টেক্সটাইল ইঞ্জিনিয়ারিং কলেজ</title>
+  
+  <!-- Meta tags for educational platform -->
+  <meta name="description" content="বাংলাদেশের ১০টি সরকারি টেক্সটাইল ইঞ্জিনিয়ারিং কলেজ (CTEC, PTEC, TECN, BTEC, JhTEC, RTEC, GTEC, JTEC, MTEC, STEC) ভর্তি পরীক্ষা প্রস্তুতি, যোগ্যতা যাচাই ও ভলান্টিয়ার নেটওয়ার্ক।">
+  <meta name="keywords" content="TEC Aspirants, Textile Engineering College Admission, CTEC, PTEC, TECN, BTEC, ঝিনাইদহ টেক্সটাইল কলেজ, বস্ত্র অধিদপ্তর">
+  <meta name="author" content="TEC Aspirants Team">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧵</text></svg>">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              900: '#064e3b'
+            },
+            pitch: {
+              black: '#000000',
+              surface: '#090a0f',
+              card: '#111218',
+              border: '#1e2029'
+            }
+          },
+          fontFamily: {
+            bangla: ['Hind Siliguri', 'sans-serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-slate-50 dark:bg-[#08090d] text-slate-800 dark:text-slate-100 antialiased selection:bg-emerald-500 selection:text-white transition-colors duration-300 min-h-screen flex flex-col justify-between">
+
+  <!-- ======================================================================
+       1. TOP HEADER NAVIGATION (Strictly Single Horizontal Line)
+       ====================================================================== -->
+  <header class="sticky top-0 z-40 w-full bg-white/95 dark:bg-[#090a0f]/95 backdrop-blur-md border-b border-slate-200/90 dark:border-pitch-border shadow-sm transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6">
+      
+      <!-- DESKTOP HEADER: Single Horizontal Line (md and up) -->
+      <div class="hidden md:flex single-line-header h-16 md:h-20">
+        
+        <!-- Element a: Platform Logo & Name -->
+        <div class="flex items-center gap-2.5 sm:gap-4 shrink-0">
+          <a href="#" class="flex items-center gap-2 group">
+            <div class="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-tr from-emerald-600 via-teal-600 to-blue-600 flex items-center justify-center text-white shadow-md shadow-emerald-600/20 group-hover:scale-105 transition-transform">
+              <i class="fa-solid fa-graduation-cap text-base sm:text-lg"></i>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-extrabold text-base sm:text-xl tracking-tight text-slate-900 dark:text-white font-sans flex items-center gap-1.5">
+                TEC Aspirants
+              </span>
+              <span class="text-[11px] text-slate-500 dark:text-slate-400 font-medium -mt-0.5">
+                ১০টি টেক্সটাইল ইঞ্জিনিয়ারিং কলেজ ভর্তি সেল
+              </span>
+            </div>
+          </a>
+
+ 
+ 
+
+
+
+
+
+
+
+        </div>
+
+        <!-- Navigation Items/Buttons (Strictly Single Horizontal Line) -->
+        <div class="flex items-center gap-2 sm:gap-2.5 shrink-0">
+          
+          <!-- Button 1: "কলেজ পছন্দের নির্দেশনা" (College Choice Priority Guideline) -->
+          <button type="button" 
+                  onclick="openModal('collegeChoiceModal')" 
+                  class="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/50 dark:hover:bg-amber-900/60 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-800 text-xs sm:text-sm font-semibold transition-all shadow-sm shrink-0">
+            <i class="fa-solid fa-list-check text-amber-600 dark:text-amber-400 text-xs sm:text-sm"></i>
+            <span>কলেজ পছন্দের নির্দেশনা</span>
+          </button>
+
+          <!-- Theme Switcher: Side-by-side with 'কলেজ পছন্দের নির্দেশনা', ICON ONLY (No Text) -->
+          <button id="themeToggleBtn" 
+                  type="button" 
+                  title="লাইট / ডার্ক মোড পরিবর্তন করুন"
+                  aria-label="Toggle Dark and Light Mode"
+                  class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-pitch-border dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 flex items-center justify-center transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500 shrink-0">
+            <i id="moonIcon" class="fa-solid fa-moon text-slate-700 dark:text-slate-200 text-sm"></i>
+            <i id="sunIcon" class="fa-solid fa-sun text-amber-400 text-sm hidden"></i>
+          </button>
+
+          <!-- Button 2: "যোগ্যতা যাচাই" (Eligibility Check) -->
+          <button type="button" 
+                  onclick="openModal('eligibilityModal')" 
+                  class="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl bg-blue-50 hover:bg-blue-100 dark:bg-blue-950/50 dark:hover:bg-blue-900/60 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800 text-xs sm:text-sm font-semibold transition-all shadow-sm shrink-0">
+            <i class="fa-solid fa-file-pdf text-rose-500 sm:text-base"></i>
+            <span>যোগ্যতা যাচাই</span>
+          </button>
+
+          <!-- Button 3: "ক্যাম্পাস ভিত্তিক ভলান্টিয়ার খুঁজুন" (Top Volunteer Finder) -->
+          <button type="button" 
+                  onclick="openModal('volunteerSearchModal')" 
+                  class="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-semibold shadow-md hover:shadow-emerald-600/30 transition-all shrink-0">
+            <i class="fa-solid fa-users-viewfinder text-xs sm:text-sm"></i>
+            <span class="hidden sm:inline">ক্যাম্পাস ভিত্তিক ভলান্টিয়ার খুঁজুন</span>
+            <span class="sm:hidden">ভলান্টিয়ার খুঁজুন</span>
+          </button>
+
+          <!-- Button 4: "কন্ট্রোল প্যানেল" (Protected Admin Control Panel) -->
+          <button type="button" 
+                  id="adminControlHeaderBtn"
+                  onclick="handleAdminAccess()" 
+                  title="কন্ট্রোল প্যানেল (শুধুমাত্র অ্যাডমিন অ্যাক্সেস)"
+                  class="inline-flex items-center gap-1.5 px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-100 dark:bg-[#151620] dark:hover:bg-slate-800 border border-slate-700 text-xs sm:text-sm font-semibold shadow-sm transition-all relative shrink-0">
+            <i id="adminControlHeaderIcon" class="fa-solid fa-lock text-slate-400 text-xs sm:text-sm"></i>
+            <span id="adminControlHeaderText" class="hidden xl:inline">কন্ট্রোল প্যানেল</span>
+            <span id="adminStatusHeaderBadge" class="hidden text-[10px] px-1.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 font-bold">অ্যাডমিন</span>
+            <span id="pendingBadgeHeader" class="hidden px-1.5 py-0.5 rounded-full bg-rose-500 text-white text-[10px] font-bold leading-none animate-pulse">0</span>
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- MOBILE HEADER (< md): Perfectly fitted, no horizontal overflow -->
+      <div class="flex md:hidden items-center justify-between h-16">
+        
+        <!-- Element a: Compact Platform Logo & Name -->
+        <a href="#" class="flex items-center gap-2 group">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-emerald-600 via-teal-600 to-blue-600 flex items-center justify-center text-white shadow-md shadow-emerald-600/20 group-hover:scale-105 transition-transform shrink-0">
+            <i class="fa-solid fa-graduation-cap text-base"></i>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-1.5">
+              <span class="font-extrabold text-base tracking-tight text-slate-900 dark:text-white font-sans">
+                TEC Aspirants
+              </span>
+              <span class="text-[9px] px-1.5 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 font-bold border border-emerald-200 dark:border-emerald-800 leading-none">
+                ভর্তি সেল
+              </span>
+            </div>
+            <span class="text-[10px] text-slate-500 dark:text-slate-400 font-medium -mt-0.5">
+              ১০টি টেক্সটাইল কলেজ
+            </span>
+          </div>
+        </a>
+
+        <!-- Right Mobile Action Buttons -->
+        <div class="flex items-center gap-2 shrink-0">
+          
+          <!-- Mobile Theme Switcher -->
+          <button id="themeToggleBtnMobile" 
+                  type="button" 
+                  title="লাইট / ডার্ক মোড পরিবর্তন করুন"
+                  aria-label="Toggle Dark and Light Mode"
+                  class="w-8 h-8 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-pitch-border dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 flex items-center justify-center transition-all focus:outline-none shrink-0">
+            <i id="moonIconMobile" class="fa-solid fa-moon text-slate-700 dark:text-slate-200 text-xs"></i>
+            <i id="sunIconMobile" class="fa-solid fa-sun text-amber-400 text-xs hidden"></i>
+          </button>
+
+          <!-- Mobile Admin Quick Lock / Key Button with Pending Counter -->
+          <button type="button" 
+                  id="adminControlMobileTopBtn" 
+                  onclick="handleAdminAccess()" 
+                  title="কন্ট্রোল প্যানেল (অ্যাডমিন)"
+                  aria-label="Admin Control Panel"
+                  class="relative w-8 h-8 rounded-xl bg-slate-900 hover:bg-slate-800 dark:bg-[#151620] text-slate-200 border border-slate-700 flex items-center justify-center transition-all focus:outline-none shrink-0">
+            <i id="adminControlMobileTopIcon" class="fa-solid fa-lock text-xs text-slate-300"></i>
+            <span id="pendingBadgeMobileTop" class="hidden absolute -top-1 -right-1 px-1 py-0.2 min-w-[16px] text-center rounded-full bg-rose-500 text-white text-[9px] font-bold leading-none animate-pulse">0</span>
+          </button>
+
+          <!-- Mobile Hamburger Drawer Toggle -->
+          <button id="mobileMenuToggleBtn" 
+                  type="button" 
+                  onclick="toggleMobileDrawer()" 
+                  title="মেনু খুলুন"
+                  aria-label="Open Navigation Menu"
+                  class="w-9 h-9 rounded-xl bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-950/50 dark:hover:bg-emerald-900/60 border border-emerald-300 dark:border-emerald-800/80 text-emerald-700 dark:text-emerald-300 flex items-center justify-center transition-all focus:outline-none shrink-0">
+            <i id="mobileMenuIcon" class="fa-solid fa-bars text-sm"></i>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- EXPANDABLE MOBILE NAVIGATION DRAWER (Slide/Fade In) -->
+    <div id="mobileNavDrawer" class="hidden md:hidden border-t border-slate-200/90 dark:border-pitch-border bg-white/98 dark:bg-[#0c0d13]/98 backdrop-blur-xl px-4 py-4 space-y-2 animate-fade-in shadow-2xl">
+      
+      <!-- Drawer Item 1: কলেজ পছন্দের নির্দেশনা -->
+      <button type="button" 
+              onclick="openModal('collegeChoiceModal'); closeMobileDrawer();" 
+              class="w-full flex items-center justify-between p-3 rounded-2xl bg-amber-50/70 hover:bg-amber-100/80 dark:bg-amber-950/30 dark:hover:bg-amber-900/40 border border-amber-200/80 dark:border-amber-800/60 text-left transition-all">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-xl bg-amber-100 dark:bg-amber-950/70 text-amber-600 dark:text-amber-400 flex items-center justify-center text-sm shadow-sm shrink-0">
+            <i class="fa-solid fa-list-check"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-xs text-amber-900 dark:text-amber-300">কলেজ পছন্দের নির্দেশনা</h4>
+            <p class="text-[11px] text-slate-500 dark:text-slate-400">১০টি সরকারি টেক্সটাইল কলেজের চয়েস লিস্ট গাইডলাইন</p>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right text-amber-500 text-xs"></i>
+      </button>
+
+      <!-- Drawer Item 2: যোগ্যতা যাচাই -->
+      <button type="button" 
+              onclick="openModal('eligibilityModal'); closeMobileDrawer();" 
+              class="w-full flex items-center justify-between p-3 rounded-2xl bg-blue-50/70 hover:bg-blue-100/80 dark:bg-blue-950/30 dark:hover:bg-blue-900/40 border border-blue-200/80 dark:border-blue-800/60 text-left transition-all">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-xl bg-blue-100 dark:bg-blue-950/70 text-blue-600 dark:text-blue-400 flex items-center justify-center text-sm shadow-sm shrink-0">
+            <i class="fa-solid fa-file-pdf text-rose-500"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-xs text-blue-900 dark:text-blue-300">ভর্তি যোগ্যতা যাচাই ও সার্কুলার</h4>
+            <p class="text-[11px] text-slate-500 dark:text-slate-400">অনলাইন জিপিএ ক্যালকুলেটর ও অফিশিয়াল নির্দেশিকা</p>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right text-blue-500 text-xs"></i>
+      </button>
+
+      <!-- Drawer Item 3: ক্যাম্পাস ভিত্তিক ভলান্টিয়ার খুঁজুন -->
+      <button type="button" 
+              onclick="openModal('volunteerSearchModal'); closeMobileDrawer();" 
+              class="w-full flex items-center justify-between p-3 rounded-2xl bg-emerald-50/70 hover:bg-emerald-100/80 dark:bg-emerald-950/30 dark:hover:bg-emerald-900/40 border border-emerald-200/80 dark:border-emerald-800/60 text-left transition-all">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-xl bg-emerald-100 dark:bg-emerald-950/70 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-sm shadow-sm shrink-0">
+            <i class="fa-solid fa-users-viewfinder"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-xs text-emerald-900 dark:text-emerald-300">ক্যাম্পাস ভিত্তিক ভলান্টিয়ার খুঁজুন</h4>
+            <p class="text-[11px] text-slate-500 dark:text-slate-400">১০ ক্যাম্পাস ও ৬৪ জেলার সিনিয়র মেন্টরশিপ</p>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right text-emerald-500 text-xs"></i>
+      </button>
+
+      <!-- Drawer Item 4: কন্ট্রোল প্যানেল (অ্যাডমিন) -->
+      <button type="button" 
+              onclick="handleAdminAccess(); closeMobileDrawer();" 
+              class="w-full flex items-center justify-between p-3 rounded-2xl bg-slate-100 hover:bg-slate-200 dark:bg-[#151620] dark:hover:bg-slate-800 border border-slate-300 dark:border-slate-700 text-left transition-all">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-xl bg-slate-900 dark:bg-slate-800 text-slate-200 flex items-center justify-center text-sm shadow-sm shrink-0">
+            <i id="drawerAdminIcon" class="fa-solid fa-lock text-slate-400"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <h4 class="font-bold text-xs text-slate-900 dark:text-white">কন্ট্রোল প্যানেল</h4>
+              <span id="drawerAdminStatusBadge" class="hidden text-[10px] px-1.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 font-bold">অ্যাডমিন</span>
+              <span id="drawerPendingBadge" class="hidden px-1.5 py-0.5 rounded-full bg-rose-500 text-white text-[10px] font-bold leading-none animate-pulse">0</span>
+            </div>
+            <p class="text-[11px] text-slate-500 dark:text-slate-400">ভলান্টিয়ার আবেদন এক ক্লিকে অনুমোদন ও সেটিংস</p>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right text-slate-400 text-xs"></i>
+      </button>
+
+      <!-- Drawer Quick Extra Action Buttons -->
+      <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-200/80 dark:border-slate-800">
+        <button type="button" 
+                onclick="openModal('volunteerModal'); closeMobileDrawer();" 
+                class="py-2.5 px-3 rounded-xl bg-slate-900 dark:bg-slate-800 text-emerald-400 text-xs font-bold border border-emerald-500/30 text-center flex items-center justify-center gap-1.5 transition-colors">
+          <i class="fa-solid fa-user-plus text-[11px]"></i>
+          <span>ভলান্টিয়ার আবেদন</span>
+        </button>
+
+        <button type="button" 
+                onclick="openModal('contactModal'); closeMobileDrawer();" 
+                class="py-2.5 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold text-center flex items-center justify-center gap-1.5 shadow-sm transition-colors">
+          <i class="fa-solid fa-paper-plane text-[11px]"></i>
+          <span>যোগাযোগ করুন</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MAIN CONTENT WRAPPER (pb-20 on mobile to preserve bottom dock spacing)
+       ====================================================================== -->
+  <main class="flex-grow pb-20 md:pb-0">
+    
+    <!-- ====================================================================
+         2. HERO SECTION (Dynamic High-Resolution Banner)
+         ==================================================================== -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 pt-4 pb-8">
+      
+      <!-- Banner Dynamic Container with Configurable Background -->
+      <div id="heroBannerContainer" 
+           class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200/60 dark:border-pitch-border bg-slate-900 min-h-[360px] md:min-h-[460px] flex items-center transition-all duration-700 group">
+        
+        <!-- Soft-Blurred Background Image Layer (Faces gently obscured while preserving vibrant CTEC PTEC TECN BTEC atmosphere) -->
+        <div id="heroBannerBg" 
+             class="absolute inset-0 bg-cover bg-center hero-soft-blur z-0"
+             style="background-image: url('assets/images/hero-graduates.jpg');"></div>
+
+        <!-- Gradient Overlay for pristine text readability -->
+        <div class="absolute inset-0 hero-gradient-overlay z-10"></div>
+        <div class="absolute inset-0 hero-radial-overlay z-10 pointer-events-none"></div>
+
+        <!-- Banner Settings Quick-Access Pill (Dynamic Admin/Config Switcher - Hidden from regular visitors) -->
+        <div id="heroBannerPill" class="absolute top-4 right-4 z-20 hidden">
+          <button type="button" 
+                  onclick="openBannerModalSecure()" 
+                  title="ব্যানার পরিবর্তন বা কাস্টমাইজ করুন (শুধুমাত্র অ্যাডমিন)"
+                  class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/60 hover:bg-black/80 backdrop-blur-md text-slate-200 border border-white/20 text-xs font-medium transition-all shadow">
+            <i class="fa-solid fa-wand-magic-sparkles text-amber-400"></i>
+            <span>ব্যানার পরিবর্তন</span>
+          </button>
+        </div>
+
+        <!-- Hero Content Inside Banner -->
+        <div class="relative z-20 max-w-4xl px-6 sm:px-12 py-10 md:py-16 text-white space-y-4 md:space-y-6">
+          
+          <!-- Badge -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-xs md:text-sm font-semibold backdrop-blur-sm">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span id="heroBadge">🏛️ সেন্ট্রাল অ্যাডমিশন ২০২৬-২৭ (১২০০ আসন)</span>
+          </div>
+
+          <!-- Main Dynamic Title -->
+          <h1 id="heroTitle" class="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-md">
+            স্বপ্ন যাদের ইঞ্জিনিয়ারিং, লক্ষ্য এবার সরকারি টেক্সটাইল কলেজ
+          </h1>
+
+          <!-- Dynamic Subtitle -->
+          <p id="heroSubtitle" class="text-sm sm:text-base md:text-lg text-slate-200 max-w-2xl font-normal leading-relaxed drop-shadow">
+            CTEC, PTEC, TECN সহ ১০টি সরকারি টেক্সটাইল ইঞ্জিনিয়ারিং কলেজের কেন্দ্রীয় ভর্তি পরীক্ষার নির্ভরযোগ্য পূর্ণাঙ্গ গাইডলাইন ও অভিজ্ঞ সিনিয়র মেন্টরশিপ প্ল্যাটফর্ম।
+          </p>
+
+          <!-- Banner Action Buttons -->
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <button type="button" 
+                    onclick="openModal('eligibilityModal')" 
+                    class="px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm md:text-base shadow-lg shadow-emerald-700/40 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center gap-2">
+              <i class="fa-solid fa-clipboard-check"></i>
+              <span>ভর্তি যোগ্যতা যাচাই করুন</span>
+            </button>
+
+            <a href="#volunteerSection" 
+               class="px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-semibold text-sm md:text-base border border-white/20 hover:border-white/40 transition-all flex items-center gap-2">
+              <i class="fa-solid fa-magnifying-glass-location text-emerald-400"></i>
+              <span>ভলান্টিয়ার খুঁজুন</span>
+            </a>
+          </div>
+
+          <!-- Quick Statistics Bar -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6 pt-4 border-t border-white/15 text-xs sm:text-sm">
+            <div>
+              <div class="text-xl sm:text-2xl font-black text-white font-sans">১০টি</div>
+              <div class="text-slate-300 text-[11px] sm:text-xs">টেক্সটাইল কলেজ (কেন্দ্র ১০১-১১০)</div>
+            </div>
+            <div>
+              <div class="text-xl sm:text-2xl font-black text-emerald-400 font-sans">১২০০টি</div>
+              <div class="text-slate-300 text-[11px] sm:text-xs">মোট আসন (প্রতি কলেজে ১২০টি)</div>
+            </div>
+            <div>
+              <div class="text-xl sm:text-2xl font-black text-white font-sans">৬৪ জেলা</div>
+              <div class="text-slate-300 text-[11px] sm:text-xs">ভলান্টিয়ার ও প্রতিনিধি নেটওয়ার্ক</div>
+            </div>
+            <div>
+              <div class="text-xl sm:text-2xl font-black text-amber-400 font-sans">১০০% ফ্রি</div>
+              <div class="text-slate-300 text-[11px] sm:text-xs">সিনিয়র পরামর্শ ও গাইডলাইন</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ====================================================================
+         INTERACTIVE CAMPUS VOLUNTEER SEARCH MODULE
+         (Campus Select + District Select + Dynamic Volunteer Cards)
+         ==================================================================== -->
+    <section id="volunteerSection" class="max-w-7xl mx-auto px-4 sm:px-6 py-8 md:py-14">
+      
+      <!-- Section Header: Textile Engineering 4 Major Disciplines -->
+      <div class="text-center max-w-3xl mx-auto mb-10 space-y-3">
+        <div class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 text-xs font-semibold">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>টেক্সটাইল ইঞ্জিনিয়ারিং স্পেশালাইজড বিভাগসমূহ</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+          টেক্সটাইলের ৪টি মূল সাবজেক্ট: কোন সেক্টরে কী কাজ?
+        </h2>
+        <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+          ১০টি সরকারি টেক্সটাইল ইঞ্জিনিয়ারিং কলেজে বিএসসি ডিগ্রির অধীনে রয়েছে এই ৪টি কোর ডিপার্টমেন্ট (প্রতি কলেজে প্রতিটি বিভাগে ৩০টি করে আসন)। কোন বিভাগে কী পড়ানো হয় এবং ক্যারিয়ারের কোন সেক্টরে কাজের সুযোগ কেমন—তা নিচে বিস্তারিত তুলে ধরা হলো:
+        </p>
+      </div>
+
+      <!-- 4 Core Textile Engineering Departments Showcase (Responsive 4-Card Grid) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-14">
+        
+        <!-- Card 1: Yarn Engineering -->
+        <div class="bg-white dark:bg-[#111218] rounded-2xl p-6 border border-emerald-500/30 dark:border-emerald-500/20 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 relative overflow-hidden">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-500 to-teal-400"></div>
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-xl shadow-sm group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-circle-nodes"></i>
+              </div>
+              <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
+                ৩০ আসন / কলেজ
+              </span>
+            </div>
+            <h3 class="font-extrabold text-slate-900 dark:text-white text-lg font-sans">
+              Yarn Engineering
+            </h3>
+            <p class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 mt-0.5 mb-3">
+              ইয়ার্ন ইঞ্জিনিয়ারিং (সুতা উৎপাদন ও স্পিনিং)
+            </p>
+            <p class="text-xs text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
+              তুলা, পাট ও কৃত্রিম ফাইবার থেকে রিং, রোটর ও কম্প্যাক্ট প্রযুক্তির মাধ্যমে আধুনিক মানসম্পন্ন সুতা উৎপাদনের বিজ্ঞান।
+            </p>
+
+            <div class="space-y-3 pt-3 border-t border-slate-100 dark:border-slate-800 text-xs">
+              <div>
+                <span class="font-bold text-slate-800 dark:text-slate-200 block mb-1 flex items-center gap-1.5">
+                  <i class="fa-solid fa-briefcase text-emerald-500 text-[11px]"></i> কোন সেক্টরে কাজ:
+                </span>
+                <p class="text-slate-600 dark:text-slate-400 leading-normal pl-4 border-l-2 border-emerald-500/40">
+                  স্পিনিং মিলস (Spinning Mills), ফাইবার টেস্টিং ল্যাব, ফাইবার সিন্থেসিস প্ল্যান্ট ও টেক্সটাইল আরএন্ডডি (R&D)।
+                </p>
+              </div>
+
+              <div>
+                <span class="font-bold text-slate-800 dark:text-slate-200 block mb-1 flex items-center gap-1.5">
+                  <i class="fa-solid fa-gears text-teal-500 text-[11px]"></i> মূল কাজের দায়িত্ব:
+                </span>
+                <p class="text-slate-600 dark:text-slate-400 leading-normal pl-4 border-l-2 border-teal-500/40">
+                  ব্লো-রুম, কার্ডিং ও কম্বিং মনিটরিং, সুতার কাউন্ট (Count) ও শক্তি (Tenacity) নিয়ন্ত্রণ এবং কোয়ালিটি অপটিমাইজেশন।
+                </p>
+              </div>
+
+              <div>
+                <span class="font-bold text-slate-800 dark:text-slate-200 block mb-1 flex items-center gap-1.5">
+                  <i class="fa-solid fa-user-tie text-blue-500 text-[11px]"></i> ভবিষ্যৎ পদবি:
+                </span>
+                <p class="text-slate-600 dark:text-slate-400 leading-normal pl-4 border-l-2 border-blue-500/40">
+                  স্পিনিং প্রোডাকশন অফিসার (SPO), ল্যাব কোয়ালিটি হেড, স্পিনিং জেনারেল ম্যানেজার (GM)।
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Fabric Engineering -->
+        <div class="bg-white dark:bg-[#111218] rounded-2xl p-6 border border-blue-500/30 dark:border-blue-500/20 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 relative overflow-hidden">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-indigo-400"></div>
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 flex items-center justify-center text-xl shadow-sm group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-border-all"></i>
+              </div>
+              <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800">
+                ৩০ আসন / কলেজ
+              </span>
+            </div>
+            <h3 class="font-extrabold text-slate-900 dark:text-white text-lg font-sans">
+              Fabric Engineering
+            </h3>
+            <p class="text-xs font-semibold text-blue-600 dark:text-blue-400 mt-0.5 mb-3">
+              ফেব্রিক ইঞ্জিনিয়ারিং (কাপড় উৎপাদন ও বুনন)
+            </p>
+            <p class="text-xs text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
+              সুতা থেকে উইভিং (তাঁত) এবং নিটিং প্রযুক্তির সাহায্যে বহুমুখী ওভেন ও নিট কাপড় তৈরির ডিজাইন ও উৎপাদনবিদ্যা।
+            </p>
+
+            <div class="space-y-3 pt-3 border-t border-slate-100 dark:border-slate-800 text-xs">
+              <div>
+                <span class="font-bold text-slate-800 dark:text-slate-200 block mb-1 flex items-center gap-1.5">
+                  <i class="fa-solid fa-briefcase text-blue-500 text-[11px]"></i> কোন সেক্টরে কাজ:
+                </span>
+                <p class="text-slate-600 dark:text-slate-400 leading-normal pl-4 border-l-2 border-blue-500/40">
+                  কম্পোজিট টেক্সটাইল মিলস, উইভিং ফ্যাক্টরি, সার্কুলার ও ফ্ল্যাট নিটিং মিল, ফেব্রিক সোর্সিং হাউজ।
+                </p>
+              </div>
+
+              <div>
+                <span class="font-bold text-slate-800 dark:text-slate-200 block mb-1 flex items-center gap-1.5">
+                  <i class="fa-solid fa-gears text-indigo-500 text-[11px]"></i> মূল কাজের দায়িত্ব:
+                </span>
+                <p class="text-slate-600 dark:text-slate-400 leading-normal pl-4 border-l-2 border-indigo-500/40">
+                  লুম মেশিনারিজ পরিচালনা, ফেব্রিক স্ট্রাকচার ডিজাইন, জিএসএম (GSM) বিশ্লেষণ ও ফেব্রিক ডিফেক্ট দূর করা।
+                </p>
+              </div>
+
+              <div>
+                <span class="font-bold text-slate-800 dark:text-slate-200 block mb-1 flex items-center gap-1.5">
+                  <i class="fa-solid fa-user-tie text-purple-500 text-[11px]"></i> ভবিষ্যৎ পদবি:
+                </span>
+                <p class="text-slate-600 dark:text-slate-400 leading-normal pl-4 border-l-2 border-purple-500/40">
+                  উইভিং/নিটিং ম্যানেজার, ফেব্রিক স্পেশালিস্ট, টেক্সটাইল টেকনিক্যাল প্রোডাক্ট ডিজাইনার।
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Wet Process Engineering -->
+        <div class="bg-white dark:bg-[#111218] rounded-2xl p-6 border border-purple-500/30 dark:border-purple-500/20 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 relative overflow-hidden">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-500 to-fuchsia-400"></div>
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-purple-50 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400 flex items-center justify-center text-xl shadow-sm group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-droplet"></i>
+              </div>
+              <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-purple-50 dark:bg-purple-950/60 text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-800">
+                ৩০ আসন / কলেজ
+              </span>
+            </div>
+            <h3 class="font-extrabold text-slate-900 dark:text-white text-lg font-sans">
+              Wet Process Engineering
+            </h3>
+            <p class="text-xs font-semibold text-purple-600 dark:text-purple-400 mt-0.5 mb-3">
+              ওয়েট প্রসেস (ডাইং, ওয়াশিং ও ফিনিশিং)
+            </p>
+            <p class="text-xs text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
+              কাঁচা কাপড়ের প্রিট্রিটমেন্ট, রাসায়নিক রঞ্জন (Dyeing), আধুনিক প্রিন্টিং ও পরিবেশবান্ধব বিশেষ ফিনিশিং প্রক্রিয়া।
+            </p>
+
+            <div class="space-y-3 pt-3 border-t border-slate-100 dark:border-slate-800 text-xs">
+              <div>
+                <span class="font-bold text-slate-800 dark:text-slate-200 block mb-1 flex items-center gap-1.5">
+                  <i class="fa-solid fa-briefcase text-purple-500 text-[11px]"></i> কোন সেক্টরে কাজ:
+                </span>
+                <p class="text-slate-600 dark:text-slate-400 leading-normal pl-4 border-l-2 border-purple-500/40">
+                  ডাইং অ্যান্ড প্রিন্টিং কারখানা, টেক্সটাইল কেমিক্যাল মাল্টিন্যাশনাল কোম্পানি, ওয়াশিং প্ল্যান্ট ও ETP সেল।
+                </p>
+              </div>
+
+              <div>
+                <span class="font-bold text-slate-800 dark:text-slate-200 block mb-1 flex items-center gap-1.5">
+                  <i class="fa-solid fa-gears text-fuchsia-500 text-[11px]"></i> মূল কাজের দায়িত্ব:
+                </span>
+                <p class="text-slate-600 dark:text-slate-400 leading-normal pl-4 border-l-2 border-fuchsia-500/40">
+                  ডাইং রেসিপি প্রণয়ন, ল্যাব ডিপ ও নিখুঁত শেড ম্যাচিং, কালার ফাস্টনেস বাড়ানো ও রাসায়নিক নিরাপত্তা নিশ্চিত করা।
+                </p>
+              </div>
+
+              <div>
+                <span class="font-bold text-slate-800 dark:text-slate-200 block mb-1 flex items-center gap-1.5">
+                  <i class="fa-solid fa-user-tie text-pink-500 text-[11px]"></i> ভবিষ্যৎ পদবি:
+                </span>
+                <p class="text-slate-600 dark:text-slate-400 leading-normal pl-4 border-l-2 border-pink-500/40">
+                  ডাইং মাস্টার/ম্যানেজার, টেকনিক্যাল সার্ভিস ম্যানেজার (TSM), কালার অ্যানালিস্ট এক্সিকিউটিভ।
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Apparel Engineering -->
+        <div class="bg-white dark:bg-[#111218] rounded-2xl p-6 border border-rose-500/30 dark:border-rose-500/20 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 relative overflow-hidden">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-rose-500 to-amber-400"></div>
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-rose-50 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400 flex items-center justify-center text-xl shadow-sm group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-shirt"></i>
+              </div>
+              <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-rose-50 dark:bg-rose-950/60 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-800">
+                ৩০ আসন / কলেজ
+              </span>
+            </div>
+            <h3 class="font-extrabold text-slate-900 dark:text-white text-lg font-sans">
+              Apparel Engineering
+            </h3>
+            <p class="text-xs font-semibold text-rose-600 dark:text-rose-400 mt-0.5 mb-3">
+              অ্যাপারেল (পোশাক তৈরি ও মার্চেন্ডাইজিং)
+            </p>
+            <p class="text-xs text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
+              কাপড় থেকে তৈরি পোশাক প্রস্তুতের প্রযুক্তি, ইন্ডাস্ট্রিয়াল ইঞ্জিনিয়ারিং (IE), প্যাটার্ন এবং আন্তর্জাতিক মার্চেন্ডাইজিং।
+            </p>
+
+            <div class="space-y-3 pt-3 border-t border-slate-100 dark:border-slate-800 text-xs">
+              <div>
+                <span class="font-bold text-slate-800 dark:text-slate-200 block mb-1 flex items-center gap-1.5">
+                  <i class="fa-solid fa-briefcase text-rose-500 text-[11px]"></i> কোন সেক্টরে কাজ:
+                </span>
+                <p class="text-slate-600 dark:text-slate-400 leading-normal pl-4 border-l-2 border-rose-500/40">
+                  আন্তর্জাতিক তৈরি পোশাক শিল্প (RMG), মাল্টিন্যাশনাল বায়িং হাউস, লিয়াজোঁ অফিস ও রিটেইল ফ্যাশন ব্র্যান্ড।
+                </p>
+              </div>
+
+              <div>
+                <span class="font-bold text-slate-800 dark:text-slate-200 block mb-1 flex items-center gap-1.5">
+                  <i class="fa-solid fa-gears text-amber-500 text-[11px]"></i> মূল কাজের দায়িত্ব:
+                </span>
+                <p class="text-slate-600 dark:text-slate-400 leading-normal pl-4 border-l-2 border-amber-500/40">
+                  বায়ার মার্চেন্ডাইজিং, অর্ডার কস্টিং ও শিপমেন্ট, লাইন ব্যালান্সিং, এসএমভি (SMV) নির্ধারণ ও কোয়ালিটি নিশ্চিতকরণ।
+                </p>
+              </div>
+
+              <div>
+                <span class="font-bold text-slate-800 dark:text-slate-200 block mb-1 flex items-center gap-1.5">
+                  <i class="fa-solid fa-user-tie text-emerald-500 text-[11px]"></i> ভবিষ্যৎ পদবি:
+                </span>
+                <p class="text-slate-600 dark:text-slate-400 leading-normal pl-4 border-l-2 border-emerald-500/40">
+                  গার্মেন্টস মার্চেন্ডাইজার, আইই (IE) ম্যানেজার, প্রোডাকশন প্ল্যানিং (PPC) হেড।
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Volunteer Transition Sub-header -->
+      <div class="pt-6 border-t border-slate-200/80 dark:border-pitch-border mb-8">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 bg-gradient-to-r from-emerald-50 via-teal-50 to-blue-50 dark:from-[#111218] dark:to-[#161722] p-5 sm:p-6 rounded-2xl border border-emerald-200/80 dark:border-slate-800">
+          <div class="space-y-1 text-center sm:text-left">
+            <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white flex items-center justify-center sm:justify-start gap-2">
+              <i class="fa-solid fa-user-graduate text-emerald-600"></i>
+              <span>ভর্তি প্রস্তুতি সহায়তায় সিনিয়র ক্যাম্পাস ভলান্টিয়ার্স</span>
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+              কলেজ ও ডিপার্টমেন্ট নির্বাচন এবং যেকোনো ভর্তি তথ্যে সরাসরি সিনিয়র ভাইদের সাথে যোগাযোগ করো।
+            </p>
+          </div>
+          <button type="button" 
+                  onclick="openModal('volunteerSearchModal')" 
+                  class="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs sm:text-sm shadow-md transition-all flex items-center gap-2 shrink-0">
+            <i class="fa-solid fa-users-viewfinder"></i>
+            <span>সকল ১০ ক্যাম্পাসের ভলান্টিয়ার খুঁজুন</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Dynamic Volunteer Cards Grid (3 Featured Volunteers) -->
+      <div id="volunteersGrid" class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <!-- Rendered dynamically via js/app.js -->
+      </div>
+
+      <!-- Empty State if no volunteer matches -->
+      <div id="emptyState" class="hidden text-center py-12 px-4 bg-white dark:bg-[#111218] rounded-2xl border border-dashed border-slate-300 dark:border-slate-800">
+        <div class="w-16 h-16 rounded-full bg-amber-50 dark:bg-amber-950/40 text-amber-500 mx-auto flex items-center justify-center text-2xl mb-3">
+          <i class="fa-solid fa-user-slash"></i>
+        </div>
+        <h3 class="text-base font-bold text-slate-800 dark:text-white">কোনো ভলান্টিয়ারের তথ্য পাওয়া যায়নি</h3>
+        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 max-w-sm mx-auto">
+          বর্তমান ফিল্টারে কোনো তথ্য মেলেনি। অন্য ক্যাম্পাস বা জেলা নির্বাচন করুন অথবা নিজে ভলান্টিয়ার হিসেবে যুক্ত হন!
+        </p>
+        <div class="mt-4 flex items-center justify-center gap-3">
+          <button type="button" 
+                  onclick="resetVolunteerFilters()" 
+                  class="px-4 py-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:bg-slate-200">
+            সকল ভলান্টিয়ার দেখুন
+          </button>
+          <button type="button" 
+                  onclick="openModal('volunteerModal')" 
+                  class="px-4 py-2 rounded-xl bg-emerald-600 text-xs font-semibold text-white hover:bg-emerald-700">
+            ভলান্টিয়ার হিসেবে যুক্ত হন
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ====================================================================
+         3. CONTACT & SOCIAL MEDIA SECTION (Middle Section)
+         Split Row / Flex Layout:
+         Left: Prominent Large Button "আমাদের সাথে যোগাযোগ কর"
+         Right: Stacked or Grid Links to Social Channels
+         ==================================================================== -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8 md:py-14 border-t border-slate-200/80 dark:border-pitch-border">
+      
+      <!-- Split Row Layout -->
+      <div class="flex flex-col lg:flex-row items-stretch gap-6 md:gap-8">
+        
+        <!-- Left Side: Prominent Large Text Button "আমাদের সাথে যোগাযোগ কর" -->
+        <div class="lg:w-5/12 flex flex-col justify-between p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-emerald-600 via-teal-700 to-slate-900 text-white shadow-xl relative overflow-hidden group">
+          
+          <!-- Background decorative circles -->
+          <div class="absolute -right-10 -bottom-10 w-44 h-44 rounded-full bg-white/5 pointer-events-none group-hover:scale-110 transition-transform"></div>
+          <div class="absolute right-12 top-6 text-white/10 text-8xl font-black pointer-events-none">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+
+          <div class="relative z-10 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/15 backdrop-blur-md text-emerald-100 text-xs font-semibold">
+              <span class="w-2 h-2 rounded-full bg-emerald-300 animate-ping"></span>
+              <span>২৪/৭ হেল্পডেস্ক ও ভর্তি তথ্য সহায়তা</span>
+            </div>
+
+            <h3 class="text-2xl sm:text-3xl font-extrabold leading-tight text-white drop-shadow-sm">
+              ভর্তি প্রস্তুতিতে যেকোনো সমস্যায় পাশে আছি আমরা
+            </h3>
+
+            <p class="text-sm text-emerald-100/90 leading-relaxed">
+              আবেদন ফরম পূরণ, ক্যাম্পাস চয়েস লিস্ট তৈরি কিংবা পরীক্ষার নিয়মাবলী নিয়ে দ্বিধায় আছো? এক ক্লিকেই আমাদের অভিজ্ঞ টিমের সাথে সরাসরি যুক্ত হও।
+            </p>
+          </div>
+
+          <!-- Prominent Large Text Button -->
+          <div class="relative z-10 pt-6">
+            <button type="button" 
+                    onclick="openModal('contactModal')" 
+                    class="w-full py-4 px-6 rounded-2xl bg-white hover:bg-slate-100 text-emerald-800 font-extrabold text-base sm:text-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 group/btn">
+              <i class="fa-solid fa-paper-plane text-emerald-600 text-xl group-hover/btn:translate-x-1 transition-transform"></i>
+              <span>আমাদের সাথে যোগাযোগ কর</span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Right Side: Stacked or Grid Links to Social Channels -->
+        <div class="lg:w-7/12 flex flex-col justify-between">
+          <div class="mb-3">
+            <div class="flex items-center justify-between">
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                <i class="fa-solid fa-share-nodes text-emerald-600"></i>
+                <span>আমাদের সোশ্যাল মিডিয়া চ্যানেলসমূহ</span>
+              </h3>
+              <span class="text-xs text-slate-500 dark:text-slate-400">ট্যাপ করে যুক্ত হন</span>
+            </div>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">
+              সবার আগে নোটিশ, হ্যান্ডনোট ও প্রশ্ন সমাধানের জন্য আমাদের অফিসিয়াল সোশ্যাল নেটওয়ার্কে যুক্ত থাকুন।
+            </p>
+          </div>
+
+          <!-- Social Channels Grid / Stack -->
+          <div id="socialGridLinks" class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+            <!-- Rendered dynamically by js/app.js using SITE_CONFIG -->
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       4. FOOTER SECTION (Pitch-Black Theme: #000000)
+       Divided into Two Main Sides:
+       Left Side: Platform Name + Sub-text Button (Join as Campus Volunteer)
+       Right Side: Large Heading "যোগাযোগ" + Circular Icons for all social channels
+       ====================================================================== -->
+  <footer class="pitch-black-footer mt-12 py-12 md:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <!-- Divided into Two Main Sides -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 pb-12 border-b border-pitch-border">
+        
+        <!-- Left Side -->
+        <div class="space-y-5">
+          <div>
+            <!-- Large Text: Platform Name -->
+            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white font-sans flex items-center gap-3">
+              <span class="w-8 h-8 rounded-lg bg-emerald-600 flex items-center justify-center text-sm">
+                <i class="fa-solid fa-graduation-cap text-white"></i>
+              </span>
+              TEC Aspirants
+            </h2>
+            <p class="text-sm text-slate-400 mt-2 max-w-md leading-relaxed">
+              গণপ্রজাতন্ত্রী বাংলাদেশ সরকারের বস্ত্র ও পাট মন্ত্রণালয় (বস্ত্র অধিদপ্তর) পরিচালিত ১০টি ঐতিহ্যবাহী সরকারি টেক্সটাইল ইঞ্জিনিয়ারিং কলেজের শিক্ষার্থীদের মেলবন্ধন ও ভর্তি প্রস্তুতি সহায়তা সেল।
+            </p>
+          </div>
+
+          <!-- Sub-text Button: "ক্যাম্পাসভিত্তিক ভোলান্টিয়ার হিসেবে যুক্ত হন" -->
+          <div>
+            <button type="button" 
+                    onclick="openModal('volunteerModal')" 
+                    class="inline-flex items-center gap-2.5 px-5 py-3 rounded-xl bg-slate-900 hover:bg-emerald-950/70 text-emerald-400 hover:text-emerald-300 font-bold text-sm border border-emerald-500/30 hover:border-emerald-500/60 shadow-lg shadow-black/60 transition-all group">
+              <i class="fa-solid fa-user-plus text-base group-hover:scale-110 transition-transform"></i>
+              <span>ক্যাম্পাসভিত্তিক ভোলান্টিয়ার হিসেবে যুক্ত হন</span>
+              <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+            </button>
+            <p class="text-[11px] text-slate-500 mt-1.5">
+              * আপনি কি CTEC, PTEC, TECN সহ যেকোনো TEC-এর শিক্ষার্থী? ভর্তিচ্ছুদের সহযোগিতায় আমাদের টিমে যুক্ত হোন।
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="space-y-5 md:pl-8 flex flex-col justify-start md:items-end">
+          
+          <div class="md:text-right">
+            <!-- Large Heading: "যোগাযোগ" (Contact) -->
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+              যোগাযোগ
+            </h3>
+            <p class="text-sm text-slate-400 mt-1">
+              আমাদের সকল সামাজিক মাধ্যমে ফলো এবং মেসেজ পাঠানোর সরাসরি লিংক
+            </p>
+          </div>
+
+          <!-- Circular Icons for all social media platforms with direct navigation links -->
+          <div class="flex flex-wrap items-center gap-3 md:justify-end pt-2">
+            
+            <!-- Facebook Page -->
+            <a href="https://www.facebook.com/tec.aspirants.bd/" 
+   
+   
+               title="ফেসবুক অফিসিয়াল পেজ"
+               class="w-12 h-12 rounded-full bg-[#1877F2]/20 hover:bg-[#1877F2] text-[#1877F2] hover:text-white border border-[#1877F2]/40 flex items-center justify-center text-lg transition-all duration-300 shadow-md hover:scale-110">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <!-- Facebook Group -->
+            <a href="https://www.facebook.com/groups/tec.aspirants.bd/" 
+   
+   
+               title="ফেসবুক ডিসকাশন গ্রুপ"
+               class="w-12 h-12 rounded-full bg-[#1877F2]/20 hover:bg-[#1877F2] text-[#1877F2] hover:text-white border border-[#1877F2]/40 flex items-center justify-center text-lg transition-all duration-300 shadow-md hover:scale-110">
+              <i class="fa-solid fa-users"></i>
+            </a>
+
+            <!-- WhatsApp Channel -->
+            <a href="https://whatsapp.com/channel/0029VbEIPvBCnA7vt6o6XZ3n" 
+   
+   
+               title="অফিসিয়াল হোয়াটসঅ্যাপ চ্যানেল"
+               class="w-12 h-12 rounded-full bg-[#25D366]/20 hover:bg-[#25D366] text-[#25D366] hover:text-white border border-[#25D366]/40 flex items-center justify-center text-lg transition-all duration-300 shadow-md hover:scale-110">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <!-- Telegram Channel -->
+            <a href="https://t.me/tec_aspirants" 
+   
+   
+               title="টেলিগ্রাম চ্যানেল"
+               class="w-12 h-12 rounded-full bg-[#229ED9]/20 hover:bg-[#229ED9] text-[#229ED9] hover:text-white border border-[#229ED9]/40 flex items-center justify-center text-lg transition-all duration-300 shadow-md hover:scale-110">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://youtube.com/@tecaspirants" 
+   
+   
+               title="ইউটিউব চ্যানেল"
+               class="w-12 h-12 rounded-full bg-[#FF0000]/20 hover:bg-[#FF0000] text-[#FF0000] hover:text-white border border-[#FF0000]/40 flex items-center justify-center text-lg transition-all duration-300 shadow-md hover:scale-110">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:tec.aspirants@gmail.com" 
+               title="অফিসিয়াল জিমেইল"
+               class="w-12 h-12 rounded-full bg-rose-500/20 hover:bg-rose-600 text-rose-400 hover:text-white border border-rose-500/40 flex items-center justify-center text-lg transition-all duration-300 shadow-md hover:scale-110">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+
+          </div>
+
+          <div class="text-xs text-slate-400 md:text-right font-sans">
+            WhatsApp: +880 1521-793040 | Email: tec.aspirants@gmail.com
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom Copyright Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div>
+          © 2026 <span class="text-slate-300 font-bold">TEC Aspirants</span>. সর্বস্বত্ব সংরক্ষিত | Textile Engineering College Admission Network
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="#" class="hover:text-slate-300 transition-colors">গোপনীয়তা নীতি</a>
+          <span>•</span>
+          <a href="#" class="hover:text-slate-300 transition-colors">ব্যবহারের শর্তাবলী</a>
+          <span>•</span>
+          <button type="button" onclick="openModal('eligibilityModal')" class="hover:text-slate-300 transition-colors">সার্কুলার PDF</button>
+          <span>•</span>
+          <button type="button" onclick="handleAdminAccess()" class="text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1 font-semibold" title="কন্ট্রোল প্যানেল (অ্যাডমিন)">
+            <i class="fa-solid fa-shield-halved text-xs"></i>
+            <span>কন্ট্রোল প্যানেল</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- ==================================================================
+           VERY BOTTOM: WEBSITE CREATOR / DEVELOPER INFORMATION
+           ================================================================== -->
+      <div class="mt-8 pt-8 border-t border-slate-900 flex flex-col items-center justify-center text-center">
+        <div class="p-5 rounded-3xl bg-[#07080c] border border-slate-800/90 max-w-md w-full shadow-2xl relative overflow-hidden group hover:border-emerald-500/50 transition-all">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-500 via-teal-400 to-blue-500"></div>
+          
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-950/80 text-emerald-400 border border-emerald-800/60 text-[11px] font-bold mb-3 shadow-inner">
+            <i class="fa-solid fa-code text-xs"></i>
+            <span>ওয়েবসাইট নির্মাতা পরিচিতি (Developer Information)</span>
+          </div>
+          
+          <!-- Name -->
+          <h4 class="text-xl font-extrabold text-white flex items-center justify-center gap-2 font-sans tracking-tight">
+            <span>Ruhul Amin Ikram</span>
+            <a href="https://www.facebook.com/ruhulaminikram" target="_blank" rel="noopener noreferrer" 
+               title="Ruhul Amin Ikram - ফেসবুক প্রোফাইল" 
+               class="text-[#1877F2] hover:text-blue-400 transition-all hover:scale-110 text-base inline-flex items-center">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </h4>
+          
+          <!-- Batch & Department -->
+          <div class="text-xs text-slate-300 font-semibold mt-1.5 flex items-center justify-center gap-2">
+            <span class="text-emerald-400 font-bold px-2 py-0.5 rounded bg-emerald-950/60 border border-emerald-800/40">16th Batch</span>
+            <span class="text-slate-600">•</span>
+            <span class="text-slate-200">Department of Apparel Engineering</span>
+          </div>
+          
+          <!-- College -->
+          <p class="text-xs text-emerald-300/90 font-medium mt-1.5">
+            Barishal Textile Engineering College
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       POPUP MODAL 1: ELIGIBILITY CHECK & PDF GUIDELINE VIEWER
+       (Embedded PDF viewer + Direct Download link + Interactive Evaluator)
+       ====================================================================== -->
+  <div id="eligibilityModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto modal-backdrop bg-black/70 backdrop-blur-sm">
+    <div class="relative w-full max-w-4xl bg-white dark:bg-[#111218] rounded-3xl border border-slate-200 dark:border-pitch-border shadow-2xl overflow-hidden animate-modal-scale my-6">
+      
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between px-6 py-4 border-b border-slate-200 dark:border-pitch-border bg-slate-50 dark:bg-[#161720]">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 flex items-center justify-center text-lg">
+            <i class="fa-solid fa-file-pdf"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">
+              ভর্তি যোগ্যতা ও অফিশিয়াল নির্দেশিকা
+            </h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400">১০টি সরকারি টেক্সটাইল ইঞ্জিনিয়ারিং কলেজ সার্কুলার</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <!-- Direct Download Link / Button -->
+          <a href="assets/docs/circular-viewer.html" 
+             download="TEC_Admission_Circular_Guideline.html" 
+
+             class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold shadow-sm transition-all">
+            <i class="fa-solid fa-download"></i>
+            <span>ডাউনলোড করুন</span>
+          </a>
+          <!-- Close Button -->
+          <button type="button" 
+                  onclick="closeModal('eligibilityModal')" 
+                  class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 flex items-center justify-center text-sm transition-colors">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Body (Two Tabs: PDF Viewer & Online GPA Calculator) -->
+      <div class="p-4 sm:p-6 space-y-6 max-h-[75vh] overflow-y-auto">
+        
+        <!-- Summary Cards of Official Admission Criteria -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+          <div class="p-3.5 rounded-2xl bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/60">
+            <div class="font-bold text-emerald-800 dark:text-emerald-300 flex items-center gap-1.5">
+              <i class="fa-solid fa-graduation-cap"></i> ন্যূনতম জিপিএ শর্ত
+            </div>
+            <p class="text-slate-600 dark:text-slate-400 mt-1">
+              বিজ্ঞান বিভাগে ২০২৪/২০২৫ সালের এইচএসসিতে কমপক্ষে <strong>GPA ৩.২৫</strong> এবং এসএসসি ও এইচএসসি মোট জিপিএ (৪র্থ বিষয়সহ) সর্বনিম্ন <strong>৬.৫০</strong>।
+            </p>
+          </div>
+          <div class="p-3.5 rounded-2xl bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800/60">
+            <div class="font-bold text-blue-800 dark:text-blue-300 flex items-center gap-1.5">
+              <i class="fa-solid fa-flask"></i> আবশ্যক ৩ বিষয়ের গ্রেড
+            </div>
+            <p class="text-slate-600 dark:text-slate-400 mt-1">
+              এইচএসসি পরীক্ষায় <strong>গণিত, পদার্থ বিজ্ঞান এবং রসায়নে</strong> আলাদাভাবে ন্যূনতম <strong>B গ্রেড (৩.০০)</strong> থাকতে হবে।
+            </p>
+          </div>
+          <div class="p-3.5 rounded-2xl bg-purple-50 dark:bg-purple-950/30 border border-purple-200 dark:border-purple-800/60">
+            <div class="font-bold text-purple-800 dark:text-purple-300 flex items-center gap-1.5">
+              <i class="fa-solid fa-file-signature"></i> লিখিত পরীক্ষা (২০০ নম্বর)
+            </div>
+            <p class="text-slate-600 dark:text-slate-400 mt-1">
+              ১০০টি MCQ প্রশ্ন (প্রতিটি ২ নম্বর): <strong>গণিত ৬০, পদার্থ ৬০, রসায়ন ৬০, ইংরেজি ২০</strong>। সময় ১ ঘণ্টা ২০ মিনিট, ভুল উত্তরে ০.৫০ কাটা যাবে।
+            </p>
+          </div>
+        </div>
+
+        <!-- Embedded Viewer Frame -->
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-inner">
+          <div class="bg-slate-100 dark:bg-[#1a1b26] px-4 py-2 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500">
+            <span class="flex items-center gap-1.5">
+              <i class="fa-solid fa-eye text-emerald-600"></i> এমবেডেড সার্কুলার নির্দেশিকা ভিউয়ার
+            </span>
+            <a href="assets/docs/circular-viewer.html" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">
+              সম্পূর্ণ উইন্ডোতে খুলুন <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </a>
+          </div>
+          <iframe src="assets/docs/circular-viewer.html" 
+                  title="TEC Admission Guidelines" 
+                  class="w-full h-80 sm:h-96 border-none bg-white"></iframe>
+        </div>
+
+        <!-- Interactive GPA Calculator -->
+        <div class="p-4 sm:p-5 rounded-2xl bg-slate-50 dark:bg-[#161720] border border-slate-200 dark:border-pitch-border space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-calculator text-emerald-600"></i>
+              <h4 class="font-bold text-sm text-slate-900 dark:text-white">অনলাইন তাৎক্ষণিক যোগ্যতা ক্যালকুলেটর</h4>
+            </div>
+            <span class="text-[11px] text-emerald-600 dark:text-emerald-400 font-semibold bg-emerald-50 dark:bg-emerald-950/40 px-2 py-0.5 rounded-full border border-emerald-300 dark:border-emerald-800">
+              অফিশিয়াল সার্কুলার ২০২৫-২৬ অনুযায়ী
+            </span>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-600 dark:text-slate-400 mb-1">এসএসসি GPA (৪র্থ বিষয়সহ)</label>
+              <input type="number" id="calcSscGpa" step="0.01" min="1.0" max="5.0" placeholder="5.00" value="4.00"
+                     class="w-full px-2.5 py-1.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#1f202c] text-xs font-bold text-center">
+            </div>
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-600 dark:text-slate-400 mb-1">এইচএসসি GPA (ন্যূনতম ৩.২৫)</label>
+              <input type="number" id="calcHscGpa" step="0.01" min="1.0" max="5.0" placeholder="5.00" value="3.50"
+                     class="w-full px-2.5 py-1.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#1f202c] text-xs font-bold text-center">
+            </div>
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-600 dark:text-slate-400 mb-1">উচ্চতর গণিত (ন্যূনতম B)</label>
+              <select id="calcMathGrade" class="w-full px-2 py-1.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#1f202c] text-xs font-semibold text-center">
+                <option value="A+">A+</option>
+                <option value="A">A</option>
+                <option value="A-">A-</option>
+                <option value="B" selected>B (৩.০০)</option>
+                <option value="C">C (২.০০)</option>
+                <option value="D">D (১.০০)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-600 dark:text-slate-400 mb-1">পদার্থবিজ্ঞান (ন্যূনতম B)</label>
+              <select id="calcPhyGrade" class="w-full px-2 py-1.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#1f202c] text-xs font-semibold text-center">
+                <option value="A+">A+</option>
+                <option value="A">A</option>
+                <option value="A-">A-</option>
+                <option value="B" selected>B (৩.০০)</option>
+                <option value="C">C (২.০০)</option>
+                <option value="D">D (১.০০)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-600 dark:text-slate-400 mb-1">রসায়ন (ন্যূনতম B)</label>
+              <select id="calcChemGrade" class="w-full px-2 py-1.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#1f202c] text-xs font-semibold text-center">
+                <option value="A+">A+</option>
+                <option value="A">A</option>
+                <option value="A-">A-</option>
+                <option value="B" selected>B (৩.০০)</option>
+                <option value="C">C (২.০০)</option>
+                <option value="D">D (১.০০)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-600 dark:text-slate-400 mb-1">ইংরেজি (এইচএসসি গ্রেড)</label>
+              <select id="calcEngGrade" class="w-full px-2 py-1.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#1f202c] text-xs font-semibold text-center">
+                <option value="A+">A+</option>
+                <option value="A">A</option>
+                <option value="A-">A-</option>
+                <option value="B" selected>B (৩.০০)</option>
+                <option value="C">C (২.০০)</option>
+                <option value="D">D (১.০০)</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="button" 
+                  id="checkEligibilityBtn" 
+                  class="w-full py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs shadow-md transition-all">
+            যোগ্যতা পরীক্ষা করুন (Evaluate Eligibility)
+          </button>
+
+          <div id="calcResult" class="hidden"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       POPUP MODAL 2: APPLICATION FORM MODAL (5 Required Fields)
+       1. নাম (Name) - Text Input
+       2. ক্যাম্পাস (Dropdown: CTEC, PTEC, TECN, BTEC, JhTEC, RTEC, GTEC, JTEC, MTEC, STEC)
+       3. ডিপার্টমেন্ট (Department) - Text Input
+       4. ব্যাচ নম্বর (Batch Number) - Text Input
+       5. মোবাইল (Mobile Number) - Text Input
+       ====================================================================== -->
+  <div id="volunteerModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto modal-backdrop bg-black/75 backdrop-blur-sm">
+    <div class="relative w-full max-w-xl bg-white dark:bg-[#111218] rounded-3xl border border-slate-200 dark:border-pitch-border shadow-2xl overflow-hidden animate-modal-scale my-6">
+      
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between px-6 py-5 border-b border-slate-200 dark:border-pitch-border bg-slate-50 dark:bg-[#161720]">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-lg">
+            <i class="fa-solid fa-user-plus"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">
+              ক্যাম্পাস ভলান্টিয়ার আবেদন ফরম
+            </h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400">TEC Aspirants ভলান্টিয়ার নেটওয়ার্কে যোগ দিন</p>
+          </div>
+        </div>
+
+        <button type="button" 
+                onclick="closeModal('volunteerModal')" 
+                class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 flex items-center justify-center text-sm transition-colors">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- 5-Field Form -->
+      <form id="volunteerForm" class="p-6 space-y-4">
+        
+        <!-- Field 1: নাম (Name) - Text Input -->
+        <div class="space-y-1">
+          <label for="formName" class="block text-xs font-bold text-slate-700 dark:text-slate-300">
+            ১. আপনার পূর্ণ নাম (Name) <span class="text-rose-500">*</span>
+          </label>
+          <div class="relative">
+            <input type="text" 
+                   id="formName" 
+                   required
+                   placeholder="যেমন: তানভীর আহমেদ" 
+                   class="w-full pl-9 pr-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-[#1a1b26] text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500">
+            <i class="fa-solid fa-user absolute left-3 top-3 text-slate-400 text-xs"></i>
+          </div>
+        </div>
+
+        <!-- Field 2: ক্যাম্পাস (Dropdown: CTEC, PTEC, TECN, BTEC, JhTEC, RTEC, GTEC, JTEC, MTEC, STEC) -->
+        <div class="space-y-1">
+          <label for="formCampus" class="block text-xs font-bold text-slate-700 dark:text-slate-300">
+            ২. আপনার ক্যাম্পাস (Campus Select) <span class="text-rose-500">*</span>
+          </label>
+          <div class="relative">
+            <select id="formCampus" 
+                    required
+                    class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-[#1a1b26] text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 font-medium">
+              <option value="" disabled selected>ক্যাম্পাস নির্বাচন করুন...</option>
+              <!-- Populated dynamically: CTEC, PTEC, TECN, BTEC, JhTEC, RTEC, GTEC, JTEC, MTEC, STEC -->
+            </select>
+          </div>
+        </div>
+
+        <!-- Field 3: ডিপার্টমেন্ট (Department) - Text Input -->
+        <div class="space-y-1">
+          <label for="formDepartment" class="block text-xs font-bold text-slate-700 dark:text-slate-300">
+            ৩. আপনার ডিপার্টমেন্ট (Department) <span class="text-rose-500">*</span>
+          </label>
+          <div class="relative">
+            <input type="text" 
+                   id="formDepartment" 
+                   required
+                   placeholder="যেমন: Apparel Engineering / Yarn / Wet Process" 
+                   class="w-full pl-9 pr-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-[#1a1b26] text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500">
+            <i class="fa-solid fa-graduation-cap absolute left-3 top-3 text-slate-400 text-xs"></i>
+          </div>
+        </div>
+
+        <!-- Field 4: ব্যাচ নম্বর (Batch Number) - Text Input -->
+        <div class="space-y-1">
+          <label for="formBatch" class="block text-xs font-bold text-slate-700 dark:text-slate-300">
+            ৪. আপনার ব্যাচ নম্বর (Batch Number) <span class="text-rose-500">*</span>
+          </label>
+          <div class="relative">
+            <input type="text" 
+                   id="formBatch" 
+                   required
+                   placeholder="যেমন: 14th Batch বা 15th Batch" 
+                   class="w-full pl-9 pr-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-[#1a1b26] text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500">
+            <i class="fa-solid fa-layer-group absolute left-3 top-3 text-slate-400 text-xs"></i>
+          </div>
+        </div>
+
+        <!-- Field 5: মোবাইল (Mobile Number) - Text Input -->
+        <div class="space-y-1">
+          <label for="formMobile" class="block text-xs font-bold text-slate-700 dark:text-slate-300">
+            ৫. মোবাইল নম্বর / WhatsApp (Mobile Number) <span class="text-rose-500">*</span>
+          </label>
+          <div class="relative">
+            <input type="tel" 
+                   id="formMobile" 
+                   required
+                   pattern="^(?:\+88|88)?(01[3-9]\d{8})$"
+                   placeholder="017xxxxxxxx" 
+                   class="w-full pl-9 pr-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-[#1a1b26] text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 font-sans">
+            <i class="fa-solid fa-phone absolute left-3 top-3 text-slate-400 text-xs"></i>
+          </div>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400">এই নম্বরে ভর্তিচ্ছু শিক্ষার্থীরা সরাসরি হোয়াটসঅ্যাপে পরামর্শ চাইতে পারবে।</p>
+        </div>
+
+        <!-- Field 6: নিজ জেলা (Home District Select) -->
+        <div class="space-y-1">
+          <label for="formDistrict" class="block text-xs font-bold text-slate-700 dark:text-slate-300">
+            ৬. আপনার নিজ জেলা (District) <span class="text-slate-400 font-normal">(ঐচ্ছিক)</span>
+          </label>
+          <div class="relative">
+            <select id="formDistrict" 
+                    class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-[#1a1b26] text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 font-medium">
+              <option value="">জেলা নির্বাচন করুন (ঐচ্ছিক)...</option>
+              <!-- Populated dynamically: 64 districts -->
+            </select>
+          </div>
+        </div>
+
+        <!-- Approval Process Notification Note -->
+        <div class="p-3 rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800/50 text-[11px] text-amber-800 dark:text-amber-300 flex items-start gap-2">
+          <i class="fa-solid fa-circle-info text-xs mt-0.5 shrink-0 text-amber-600 dark:text-amber-400"></i>
+          <span>আপনার আবেদনটি জমা হওয়ার পর অ্যাডমিন কন্ট্রোল প্যানেল থেকে অনুমোদিত হওয়া মাত্রই ওয়েবসাইট ভলান্টিয়ার তালিকায় স্বয়ংক্রিয়ভাবে যুক্ত হয়ে যাবে।</span>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="pt-4">
+          <button type="submit" 
+                  class="w-full py-3 px-6 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-lg shadow-emerald-600/30 transition-all flex items-center justify-center gap-2">
+            <i class="fa-solid fa-check"></i>
+            <span>আবেদন জমা দিন (Submit Application)</span>
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       POPUP MODAL 3: DIRECT CONTACT US MODAL
+       ====================================================================== -->
+  <div id="contactModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto modal-backdrop bg-black/75 backdrop-blur-sm">
+    <div class="relative w-full max-w-lg bg-white dark:bg-[#111218] rounded-3xl border border-slate-200 dark:border-pitch-border shadow-2xl overflow-hidden animate-modal-scale my-6">
+      
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between px-6 py-5 border-b border-slate-200 dark:border-pitch-border bg-slate-50 dark:bg-[#161720]">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-lg">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">আমাদের সাথে যোগাযোগ করুন</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400">TEC Aspirants অফিশিয়াল সাপোর্ট সেল</p>
+          </div>
+        </div>
+
+        <button type="button" 
+                onclick="closeModal('contactModal')" 
+                class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 flex items-center justify-center text-sm transition-colors">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="p-6 space-y-4">
+        <!-- Direct Quick Actions -->
+        <div class="space-y-3">
+          <a href="https://wa.me/8801521793040?text=%E0%A6%86%E0%A6%B8%E0%A6%B8%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%AE%E0%A7%81%20%E0%A6%86%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%95%E0%A7%81%E0%A6%AE%2C%20TEC%20Aspirants%20%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF%20%E0%A6%B8%E0%A6%BE%E0%A6%B9%E0%A6%BE%E0%A6%AF%E0%A7%8D%E0%A6%AF%20%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%9F%E0%A7%8B%E0%A6%9C%E0%A6%A8" 
+ 
+
+             class="flex items-center justify-between p-3.5 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-300 dark:border-emerald-800/80 hover:bg-emerald-100 transition-colors">
+            <div class="flex items-center gap-3">
+              <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+              <div>
+                <h4 class="font-bold text-sm text-slate-900 dark:text-white">অফিসিয়াল হোয়াটসঅ্যাপ হটলাইন</h4>
+                <p class="text-xs text-slate-500 dark:text-slate-400 font-sans">+880 1521-793040</p>
+              </div>
+            </div>
+            <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400">মেসেজ দিন <i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+
+
+
+          <a href="https://whatsapp.com/channel/0029VbEIPvBCnA7vt6o6XZ3n" 
+ 
+
+             class="flex items-center justify-between p-3.5 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-300 dark:border-emerald-800/80 hover:bg-emerald-100 transition-colors">
+            <div class="flex items-center gap-3">
+              <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+              <div>
+                <h4 class="font-bold text-sm text-slate-900 dark:text-white">অফিসিয়াল হোয়াটসঅ্যাপ চ্যানেল</h4>
+                <p class="text-xs text-slate-500 dark:text-slate-400">ইনস্ট্যান্ট ভর্তি নোটিশ ও ব্রেকিং নিউজ</p>
+              </div>
+            </div>
+            <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400">যুক্ত হন <i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+
+          <a href="mailto:tec.aspirants@gmail.com" 
+             class="flex items-center justify-between p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-300 dark:border-slate-700 hover:bg-slate-100 transition-colors">
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-envelope text-xl text-rose-500"></i>
+              <div>
+                <h4 class="font-bold text-sm text-slate-900 dark:text-white">অফিসিয়াল জিমেইল সাপোর্ট</h4>
+                <p class="text-xs text-slate-500 dark:text-slate-400 font-sans">tec.aspirants@gmail.com</p>
+              </div>
+            </div>
+            <span class="text-xs font-bold text-slate-600 dark:text-slate-400">ইমেইল পাঠান <i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       POPUP MODAL 4: DYNAMIC HERO BANNER ADMIN PANEL / CUSTOMIZER
+       (Easily update banner image, title, subtext, or pick from presets)
+       ====================================================================== -->
+  <div id="bannerModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto modal-backdrop bg-black/75 backdrop-blur-sm">
+    <div class="relative w-full max-w-xl bg-white dark:bg-[#111218] rounded-3xl border border-slate-200 dark:border-pitch-border shadow-2xl overflow-hidden animate-modal-scale my-6">
+      
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between px-6 py-5 border-b border-slate-200 dark:border-pitch-border bg-slate-50 dark:bg-[#161720]">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-100 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 flex items-center justify-center text-lg">
+            <i class="fa-solid fa-sliders"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">ডায়নামিক ব্যানার কনফিগারেশন</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400">অ্যাডমিন বা কনফিগারেশন ফাইল পরিবর্তন প্যানেল</p>
+          </div>
+        </div>
+
+        <button type="button" 
+                onclick="closeModal('bannerModal')" 
+                class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 flex items-center justify-center text-sm transition-colors">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="p-6 space-y-6">
+        <!-- Preset Banners -->
+        <div>
+          <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-2">
+            ১. রেডিমেড ব্যানার প্রিসেট থেকে নির্বাচন করুন:
+          </label>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+            <button type="button" 
+                    onclick="switchBannerPreset(0); closeModal('bannerModal');" 
+                    class="p-2.5 text-left rounded-xl border border-slate-200 dark:border-slate-700 hover:border-emerald-500 hover:bg-emerald-50/50 dark:hover:bg-emerald-950/30 transition-all text-xs">
+              <span class="font-bold block text-slate-800 dark:text-slate-200">প্রিসেট ১: সেন্ট্রাল ২০২৬-২৭</span>
+              <span class="text-[10px] text-slate-500">হাই-টেক ক্যাম্পাস ও প্রস্তুতি</span>
+            </button>
+            <button type="button" 
+                    onclick="switchBannerPreset(1); closeModal('bannerModal');" 
+                    class="p-2.5 text-left rounded-xl border border-slate-200 dark:border-slate-700 hover:border-emerald-500 hover:bg-emerald-50/50 dark:hover:bg-emerald-950/30 transition-all text-xs">
+              <span class="font-bold block text-slate-800 dark:text-slate-200">প্রিসেট ২: আধুনিক ল্যাব</span>
+              <span class="text-[10px] text-slate-500">টেক্সটাইল ল্যাবরেটরি লাইফ</span>
+            </button>
+            <button type="button" 
+                    onclick="switchBannerPreset(2); closeModal('bannerModal');" 
+                    class="p-2.5 text-left rounded-xl border border-slate-200 dark:border-slate-700 hover:border-emerald-500 hover:bg-emerald-50/50 dark:hover:bg-emerald-950/30 transition-all text-xs">
+              <span class="font-bold block text-slate-800 dark:text-slate-200">প্রিসেট ৩: ভলান্টিয়ার নেট</span>
+              <span class="text-[10px] text-slate-500">সিনিয়র মেন্টরশিপ ফোকাস</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Custom Banner Image Form -->
+        <form id="bannerForm" class="space-y-3 pt-4 border-t border-slate-200 dark:border-slate-800">
+          <label class="block text-xs font-bold text-slate-700 dark:text-slate-300">
+            ২. অথবা নিজস্ব ছবির লিংক ও শিরোনাম দিন:
+          </label>
+          <div>
+            <label class="block text-[11px] text-slate-500 mb-1">ব্যানার ছবির URL (High-Res Image):</label>
+            <input type="url" 
+                   id="bannerInputUrl" 
+                   required
+                   value="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=85"
+                   class="w-full px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-[#1a1b26] text-xs">
+          </div>
+          <div>
+            <label class="block text-[11px] text-slate-500 mb-1">ব্যানার প্রধান শিরোনাম:</label>
+            <input type="text" 
+                   id="bannerInputTitle" 
+                   required
+                   value="স্বপ্ন যাদের ইঞ্জিনিয়ারিং, লক্ষ্য এবার সরকারি টেক্সটাইল কলেজ"
+                   class="w-full px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-[#1a1b26] text-xs font-bold">
+          </div>
+          <div>
+            <label class="block text-[11px] text-slate-500 mb-1">উপ-শিরোনাম (Subtitle):</label>
+            <input type="text" 
+                   id="bannerInputSub" 
+                   value="CTEC, PTEC, TECN সহ ১০টি সরকারি টেক্সটাইল ইঞ্জিনিয়ারিং কলেজের কেন্দ্রীয় ভর্তি পরীক্ষার প্ল্যাটফর্ম।"
+                   class="w-full px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-[#1a1b26] text-xs">
+          </div>
+          <div>
+            <label class="block text-[11px] text-slate-500 mb-1">ব্যাজ টেক্সট (Badge):</label>
+            <input type="text" 
+                   id="bannerInputBadge" 
+                   value="🏛️ সেন্ট্রাল অ্যাডমিশন ২০২৬-২৭ (১২০০ আসন)"
+                   class="w-full px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-[#1a1b26] text-xs">
+          </div>
+
+          <button type="submit" 
+                  class="w-full py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-white font-bold text-xs shadow-md transition-all">
+            ব্যানার সেভ ও আপডেট করুন
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       POPUP MODAL 5: COLLEGE CHOICE PRIORITY & PREFERENCE GUIDELINE
+       (১০টি সরকারি টেক্সটাইল ইঞ্জিনিয়ারিং কলেজ চয়েস লিস্ট গাইডলাইন)
+       ====================================================================== -->
+  <div id="collegeChoiceModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto modal-backdrop bg-black/75 backdrop-blur-sm">
+    <div class="relative w-full max-w-4xl bg-white dark:bg-[#111218] rounded-3xl border border-slate-200 dark:border-pitch-border shadow-2xl overflow-hidden animate-modal-scale my-6">
+      
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between px-6 py-4 border-b border-slate-200 dark:border-pitch-border bg-slate-50 dark:bg-[#161720]">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-100 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 flex items-center justify-center text-lg">
+            <i class="fa-solid fa-list-check"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">
+              কলেজ পছন্দের পূর্ণাঙ্গ নির্দেশনা ও ক্রমানুসার
+            </h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400">১০টি সরকারি টেক্সটাইল ইঞ্জিনিয়ারিং কলেজ চয়েস লিস্ট গাইডলাইন</p>
+          </div>
+        </div>
+
+        <button type="button" 
+                onclick="closeModal('collegeChoiceModal')" 
+                class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 flex items-center justify-center text-sm transition-colors">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-4 sm:p-6 space-y-6 max-h-[78vh] overflow-y-auto">
+        
+        <!-- Highlight Box -->
+        <div class="p-4 rounded-2xl bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-950/30 dark:to-orange-950/20 border border-amber-200 dark:border-amber-800/60">
+          <h4 class="font-bold text-sm text-amber-900 dark:text-amber-300 flex items-center gap-2 mb-1.5">
+            <i class="fa-solid fa-lightbulb text-amber-500"></i> কলেজ চয়েস দেওয়ার আগে যা জানা জরুরি:
+          </h4>
+          <p class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+            গণপ্রজাতন্ত্রী বাংলাদেশ সরকারের বস্ত্র ও পাট মন্ত্রণালয় (বস্ত্র অধিদপ্তর) পরিচালিত ১০টি টেক্সটাইল ইঞ্জিনিয়ারিং কলেজ একই কেন্দ্রীয় ভর্তি পরীক্ষার মাধ্যমে শিক্ষার্থী ভর্তি করে। প্রতিটি কলেজের সিলেবাস, ডিগ্রি ও পরীক্ষা নিয়ন্ত্রণ ব্যবস্থা অভিন্ন। তাই কলেজ চয়েস করার সময় <strong>ভৌগোলিক দূরত্ব, যাতায়াত সুবিধা, ল্যাব ও অবকাঠামো এবং আবাসন</strong> বিবেচনা করাই সর্বোত্তম।
+          </p>
+        </div>
+
+        <!-- 4 Golden Rules -->
+        <div>
+          <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-3 flex items-center gap-2">
+            <i class="fa-solid fa-star text-amber-500"></i> কলেজ পছন্দের ৪টি মূল বিবেচ্য বিষয়:
+          </h4>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+            <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-[#161720] border border-slate-200 dark:border-slate-800">
+              <span class="font-bold text-slate-800 dark:text-slate-200 block mb-1">১. ভৌগোলিক নৈকট্য ও নিজ বিভাগ:</span>
+              <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                নিজের বাড়ি বা নিজ প্রশাসনিক বিভাগের আওতাধীন কলেজকে সাধারণত অগ্রাধিকার দেওয়া উচিত, যাতে পরিবার থেকে সহজে আসা-যাওয়া করা যায়।
+              </p>
+            </div>
+            <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-[#161720] border border-slate-200 dark:border-slate-800">
+              <span class="font-bold text-slate-800 dark:text-slate-200 block mb-1">২. ঢাকা থেকে যাতায়াত ব্যবস্থা:</span>
+              <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                যেসব কলেজ ঢাকা ও প্রধান মহাসড়কের সাথে সরাসরি যুক্ত (যেমন MTEC, BTEC, PTEC, JhTEC) সেগুলোতে দ্রুত যাতায়াতের অনন্য সুবিধা রয়েছে।
+              </p>
+            </div>
+            <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-[#161720] border border-slate-200 dark:border-slate-800">
+              <span class="font-bold text-slate-800 dark:text-slate-200 block mb-1">৩. প্রাচীনত্ব ও অ্যালামনাই নেটওয়ার্ক:</span>
+              <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                CTEC (১৯১১), PTEC (১৯১৫), TECN (১৯১৮) এবং BTEC (১৯৮০)—এই কলেজগুলোর দীর্ঘ ঐতিহ্য এবং ইন্ডাস্ট্রিয়াল টেক্সটাইল সেক্টরে হাজার হাজার প্রাক্তন অ্যালামনাই কর্মরত।
+              </p>
+            </div>
+            <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-[#161720] border border-slate-200 dark:border-slate-800">
+              <span class="font-bold text-slate-800 dark:text-slate-200 block mb-1">৪. মেধা স্কোর ও অতীতের মেরিট ট্রেন্ড:</span>
+              <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                সাধারণত CTEC, PTEC ও BTEC প্রথম সারির পছন্দের শীর্ষে থাকে। নিজের প্রাপ্ত পরীক্ষার স্কোর অনুযায়ী পছন্দের ক্রমানুসার সাজানো নিরাপদ।
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recommended College Priority Order (10 Colleges) -->
+        <div>
+          <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-3 flex items-center gap-2">
+            <i class="fa-solid fa-building-columns text-emerald-600"></i> সাধারণ সুপারিশকৃত কলেজ ক্রমানুসার (প্রাধান্য তালিকা):
+          </h4>
+          <div class="space-y-2.5">
+            
+            <div class="p-3.5 rounded-xl bg-white dark:bg-[#161720] border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-emerald-500 transition-colors">
+              <div class="flex items-start gap-3">
+                <span class="w-7 h-7 rounded-lg bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 font-bold flex items-center justify-center text-xs shrink-0">১</span>
+                <div>
+                  <h5 class="font-bold text-sm text-slate-900 dark:text-white">CTEC - টেক্সটাইল ইঞ্জিনিয়ারিং কলেজ, চট্টগ্রাম (কোড ১০১)</h5>
+                  <p class="text-xs text-slate-500 dark:text-slate-400">জোরারগঞ্জ, মিরসরাই, চট্টগ্রাম • প্রতিষ্ঠিত ১৯১১ • পোর্ট সিটি ও বৃহৎ টেক্সটাইল জোনের সন্নিকটে</p>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-emerald-50 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 self-start sm:self-center">শীর্ষ ঐতিহ্যবাহী</span>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-white dark:bg-[#161720] border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-emerald-500 transition-colors">
+              <div class="flex items-start gap-3">
+                <span class="w-7 h-7 rounded-lg bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 font-bold flex items-center justify-center text-xs shrink-0">২</span>
+                <div>
+                  <h5 class="font-bold text-sm text-slate-900 dark:text-white">PTEC - পাবনা টেক্সটাইল ইঞ্জিনিয়ারিং কলেজ, পাবনা (কোড ১০২)</h5>
+                  <p class="text-xs text-slate-500 dark:text-slate-400">শালগাড়িয়া, পাবনা সদর • প্রতিষ্ঠিত ১৯১৫ • প্রাচীন স্পিনিং ও উইভিং গবেষণার প্রাণকেন্দ্র</p>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-emerald-50 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 self-start sm:self-center">শীর্ষ ঐতিহ্যবাহী</span>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-white dark:bg-[#161720] border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-blue-500 transition-colors">
+              <div class="flex items-start gap-3">
+                <span class="w-7 h-7 rounded-lg bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 font-bold flex items-center justify-center text-xs shrink-0">৩</span>
+                <div>
+                  <h5 class="font-bold text-sm text-slate-900 dark:text-white">BTEC - বরিশাল টেক্সটাইল ইঞ্জিনিয়ারিং কলেজ, বরিশাল (কোড ১০৪)</h5>
+                  <p class="text-xs text-slate-500 dark:text-slate-400">সি এন্ড বি রোড, বরিশাল • প্রতিষ্ঠিত ১৯৮০ • বিভাগীয় শহরের কেন্দ্রে, উন্নত যোগাযোগ ও আবাসন</p>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-blue-50 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 self-start sm:self-center">বিভাগীয় শহর</span>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-white dark:bg-[#161720] border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-purple-500 transition-colors">
+              <div class="flex items-start gap-3">
+                <span class="w-7 h-7 rounded-lg bg-purple-100 dark:bg-purple-950/60 text-purple-700 dark:text-purple-300 font-bold flex items-center justify-center text-xs shrink-0">৪</span>
+                <div>
+                  <h5 class="font-bold text-sm text-slate-900 dark:text-white">TECN - টেক্সটাইল ইঞ্জিনিয়ারিং কলেজ, নোয়াখালী (কোড ১০৩)</h5>
+                  <p class="text-xs text-slate-500 dark:text-slate-400">বেগমগঞ্জ, নোয়াখালী • প্রতিষ্ঠিত ১৯১৮ • ঐতিহ্যবাহী ল্যাব, আধুনিক ক্লাস ও সমৃদ্ধ অ্যালামনাই</p>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-purple-50 dark:bg-purple-950/50 text-purple-700 dark:text-purple-300 self-start sm:self-center">ঐতিহ্যবাহী</span>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-white dark:bg-[#161720] border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-teal-500 transition-colors">
+              <div class="flex items-start gap-3">
+                <span class="w-7 h-7 rounded-lg bg-teal-100 dark:bg-teal-950/60 text-teal-700 dark:text-teal-300 font-bold flex items-center justify-center text-xs shrink-0">৫</span>
+                <div>
+                  <h5 class="font-bold text-sm text-slate-900 dark:text-white">JhTEC - ঝিনাইদহ টেক্সটাইল ইঞ্জিনিয়ারিং কলেজ, ঝিনাইদহ (কোড ১০৫)</h5>
+                  <p class="text-xs text-slate-500 dark:text-slate-400">মধুপুর বাজার, সদর, ঝিনাইদহ • পূর্ণাঙ্গ আধুনিক ক্যাম্পাস ও পরিবেশবান্ধব একাডেমি লাইফ</p>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-teal-50 dark:bg-teal-950/50 text-teal-700 dark:text-teal-300 self-start sm:self-center">আধুনিক ক্যাম্পাস</span>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-white dark:bg-[#161720] border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-rose-500 transition-colors">
+              <div class="flex items-start gap-3">
+                <span class="w-7 h-7 rounded-lg bg-rose-100 dark:bg-rose-950/60 text-rose-700 dark:text-rose-300 font-bold flex items-center justify-center text-xs shrink-0">৬</span>
+                <div>
+                  <h5 class="font-bold text-sm text-slate-900 dark:text-white">MTEC - মাদারীপুর টেক্সটাইল ইঞ্জিনিয়ারিং কলেজ, মাদারীপুর (কোড ১০৯)</h5>
+                  <p class="text-xs text-slate-500 dark:text-slate-400">শিবচর, মাদারীপুর • পদ্মা সেতুর সংযোগস্থল, ঢাকা থেকে মাত্র ১-দেড় ঘণ্টার দ্রুত যাতায়াত</p>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-rose-50 dark:bg-rose-950/50 text-rose-700 dark:text-rose-300 self-start sm:self-center">ঢাকার সন্নিকটে</span>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-white dark:bg-[#161720] border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-amber-500 transition-colors">
+              <div class="flex items-start gap-3">
+                <span class="w-7 h-7 rounded-lg bg-amber-100 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 font-bold flex items-center justify-center text-xs shrink-0">৭</span>
+                <div>
+                  <h5 class="font-bold text-sm text-slate-900 dark:text-white">RTEC - রংপুর টেক্সটাইল ইঞ্জিনিয়ারিং কলেজ, রংপুর (কোড ১০৬)</h5>
+                  <p class="text-xs text-slate-500 dark:text-slate-400">পীরগঞ্জ, রংপুর • উত্তরবঙ্গের শীর্ষ টেক্সটাইল ইনস্টিটিউট ও শান্তিপূর্ণ পড়াশোনার পরিবেশ</p>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-amber-50 dark:bg-amber-950/50 text-amber-700 dark:text-amber-300 self-start sm:self-center">উত্তরবঙ্গ জোন</span>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-white dark:bg-[#161720] border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-cyan-500 transition-colors">
+              <div class="flex items-start gap-3">
+                <span class="w-7 h-7 rounded-lg bg-cyan-100 dark:bg-cyan-950/60 text-cyan-700 dark:text-cyan-300 font-bold flex items-center justify-center text-xs shrink-0">৮</span>
+                <div>
+                  <h5 class="font-bold text-sm text-slate-900 dark:text-white">GTEC - গোপালগঞ্জ টেক্সটাইল ইঞ্জিনিয়ারিং কলেজ, গোপালগঞ্জ (কোড ১০৭)</h5>
+                  <p class="text-xs text-slate-500 dark:text-slate-400">সদর, গোপালগঞ্জ • ঢাকা-খুলনা হাইওয়ের কাছে মনোরম সুবিশাল নতুন আধুনিক ক্যাম্পাস</p>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-cyan-50 dark:bg-cyan-950/50 text-cyan-700 dark:text-cyan-300 self-start sm:self-center">আধুনিক ল্যাব</span>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-white dark:bg-[#161720] border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-indigo-500 transition-colors">
+              <div class="flex items-start gap-3">
+                <span class="w-7 h-7 rounded-lg bg-indigo-100 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 font-bold flex items-center justify-center text-xs shrink-0">৯</span>
+                <div>
+                  <h5 class="font-bold text-sm text-slate-900 dark:text-white">JTEC - জামালপুর টেক্সটাইল ইঞ্জিনিয়ারিং কলেজ, জামালপুর (কোড ১০৮)</h5>
+                  <p class="text-xs text-slate-500 dark:text-slate-400">ভাবকী, মেলান্দহ, জামালপুর • আধুনিক ল্যাবরেটরি ও ক্লাসরুম সুযোগ-সুবিধা</p>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-indigo-50 dark:bg-indigo-950/50 text-indigo-700 dark:text-indigo-300 self-start sm:self-center">নতুন ক্যাম্পাস</span>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-white dark:bg-[#161720] border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-sky-500 transition-colors">
+              <div class="flex items-start gap-3">
+                <span class="w-7 h-7 rounded-lg bg-sky-100 dark:bg-sky-950/60 text-sky-700 dark:text-sky-300 font-bold flex items-center justify-center text-xs shrink-0">১০</span>
+                <div>
+                  <h5 class="font-bold text-sm text-slate-900 dark:text-white">STEC - সিলেট টেক্সটাইল ইঞ্জিনিয়ারিং কলেজ, সিলেট (কোড ১১০)</h5>
+                  <p class="text-xs text-slate-500 dark:text-slate-400">দক্ষিণ সুরমা, সিলেট • সিলেট বিভাগের কেন্দ্রীয় টেক্সটাইল ক্যাম্পাস ও সম্প্রসারিত ল্যাব</p>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-sky-50 dark:bg-sky-950/50 text-sky-700 dark:text-sky-300 self-start sm:self-center">সিলেট জোন</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="px-6 py-4 bg-slate-50 dark:bg-[#161720] border-t border-slate-200 dark:border-pitch-border flex items-center justify-between">
+        <p class="text-xs text-slate-500 dark:text-slate-400">
+          * চয়েস ফর্ম পূরণের সময় নিজ সুবিধা অনুযায়ী ক্রমানুসার সাজাতে পরামর্শ দেওয়া হলো।
+        </p>
+        <button type="button" 
+                onclick="closeModal('collegeChoiceModal')" 
+                class="px-5 py-2 rounded-xl bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-bold transition-colors">
+          বন্ধ করুন
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       POPUP MODAL 6: TOP VOLUNTEER FINDER MODAL (CAMPUS & DISTRICT SEARCH)
+       ====================================================================== -->
+  <div id="volunteerSearchModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto modal-backdrop bg-black/75 backdrop-blur-sm">
+    <div class="relative w-full max-w-4xl bg-white dark:bg-[#111218] rounded-3xl border border-slate-200 dark:border-pitch-border shadow-2xl overflow-hidden animate-modal-scale my-6">
+      
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between px-6 py-4 border-b border-slate-200 dark:border-pitch-border bg-slate-50 dark:bg-[#161720]">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-lg">
+            <i class="fa-solid fa-users-viewfinder"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">
+              ক্যাম্পাসভিত্তিক ভলান্টিয়ার খুঁজুন
+            </h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400">১০টি সরকারি টেক্সটাইল কলেজ ও ৬৪ জেলার প্রতিনিধি নেটওয়ার্ক</p>
+          </div>
+        </div>
+
+        <button type="button" 
+                onclick="closeModal('volunteerSearchModal')" 
+                class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 flex items-center justify-center text-sm transition-colors">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-4 sm:p-6 space-y-5 max-h-[78vh] overflow-y-auto">
+        
+        <!-- Search Filters Bar: 3 Options in Exact Sequence: 1. প্রতিষ্ঠান -> 2. বিভাগ -> 3. জেলা (বিভাগ ভিত্তিক) -->
+        <div class="bg-slate-50 dark:bg-[#161720] p-4 sm:p-5 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-3">
+          
+          <div class="flex items-center justify-between pb-1 border-b border-slate-200/70 dark:border-slate-800">
+            <span class="text-xs font-bold text-slate-800 dark:text-slate-200 flex items-center gap-1.5">
+              <i class="fa-solid fa-filter text-emerald-600"></i>
+              <span>ভলান্টিয়ার ফিল্টারিং (প্রতিষ্ঠান, বিভাগ ও জেলা অনুযায়ী):</span>
+            </span>
+            <button type="button" 
+                    onclick="resetModalFilters()" 
+                    class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400 hover:underline flex items-center gap-1">
+              <i class="fa-solid fa-rotate-left text-[10px]"></i>
+              <span>ফিল্টার রিসেট</span>
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            
+            <!-- Option 1: প্রতিষ্ঠান (ক্যাম্পাস) -->
+            <div class="space-y-1">
+              <label for="modalFilterCampus" class="block text-xs font-bold text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
+                <span class="w-5 h-5 rounded-full bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 flex items-center justify-center text-[10px] font-black">১</span>
+                <i class="fa-solid fa-building-columns text-emerald-600"></i>
+                <span>প্রতিষ্ঠান (ক্যাম্পাস):</span>
+              </label>
+              <select id="modalFilterCampus" 
+                      class="w-full px-3 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#191a24] text-slate-900 dark:text-white text-xs font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none transition-all">
+                <option value="all">সকল প্রতিষ্ঠান (১০টি সরকারি কলেজ)</option>
+              </select>
+            </div>
+
+            <!-- Option 2: বিভাগ (প্রশাসনিক বিভাগ) -->
+            <div class="space-y-1">
+              <label for="modalFilterDivision" class="block text-xs font-bold text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
+                <span class="w-5 h-5 rounded-full bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 flex items-center justify-center text-[10px] font-black">২</span>
+                <i class="fa-solid fa-map text-blue-600"></i>
+                <span>বিভাগ:</span>
+              </label>
+              <select id="modalFilterDivision" 
+                      class="w-full px-3 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#191a24] text-slate-900 dark:text-white text-xs font-medium focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all">
+                <option value="all">সকল বিভাগ (৮টি প্রশাসনিক বিভাগ)</option>
+                <option value="ঢাকা">ঢাকা বিভাগ</option>
+                <option value="চট্টগ্রাম">চট্টগ্রাম বিভাগ</option>
+                <option value="রাজশাহী">রাজশাহী বিভাগ</option>
+                <option value="খুলনা">খুলনা বিভাগ</option>
+                <option value="বরিশাল">বরিশাল বিভাগ</option>
+                <option value="সিলেট">সিলেট বিভাগ</option>
+                <option value="রংপুর">রংপুর বিভাগ</option>
+                <option value="ময়মনসিংহ">ময়মনসিংহ বিভাগ</option>
+              </select>
+            </div>
+
+            <!-- Option 3: জেলা (নির্বাচিত বিভাগের ওপর ভিত্তি করে) -->
+            <div class="space-y-1">
+              <label for="modalFilterDistrict" class="block text-xs font-bold text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
+                <span class="w-5 h-5 rounded-full bg-rose-100 dark:bg-rose-950/60 text-rose-700 dark:text-rose-300 flex items-center justify-center text-[10px] font-black">৩</span>
+                <i class="fa-solid fa-location-dot text-rose-500"></i>
+                <span>জেলা (বিভাগ ভিত্তিক):</span>
+              </label>
+              <select id="modalFilterDistrict" 
+                      class="w-full px-3 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#191a24] text-slate-900 dark:text-white text-xs font-medium focus:ring-2 focus:ring-rose-500 focus:outline-none transition-all">
+                <option value="all">সকল জেলা (৬৪ জেলা)</option>
+              </select>
+            </div>
+
+          </div>
+
+          <!-- Secondary Filter: Keyword (Name/Department/Mobile) -->
+          <div class="pt-2 border-t border-slate-200/80 dark:border-slate-800">
+            <div class="relative">
+              <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3 text-slate-400 text-xs"></i>
+              <input type="text" 
+                     id="modalSearchInput" 
+                     placeholder="ভলান্টিয়ারের নাম, ডিপার্টমেন্ট বা মোবাইল নম্বর দিয়ে খুঁজুন..." 
+                     class="w-full pl-9 pr-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#191a24] text-slate-900 dark:text-white text-xs focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Result count inside modal -->
+        <div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 px-1 border-b border-slate-100 dark:border-slate-800/80 pb-2">
+          <span id="modalResultsCount" class="font-bold text-slate-800 dark:text-slate-200"></span>
+          <span>* WhatsApp আইকনে সরাসরি চ্যাট ওপেন হবে</span>
+        </div>
+
+        <!-- Volunteers Grid inside modal -->
+        <div id="modalVolunteersGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       POPUP MODAL 7: ADMIN CONTROL PANEL (কন্ট্রোল প্যানেল)
+       (Review Pending Applications & 1-Click Approval to Volunteers Network)
+       ====================================================================== -->
+  <div id="adminControlModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto modal-backdrop bg-black/80 backdrop-blur-sm">
+    <div class="relative w-full max-w-4xl bg-white dark:bg-[#111218] rounded-3xl border border-slate-200 dark:border-pitch-border shadow-2xl overflow-hidden animate-modal-scale my-6">
+      
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between px-6 py-5 border-b border-slate-200 dark:border-pitch-border bg-slate-50 dark:bg-[#161720]">
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-emerald-600 to-teal-500 text-white flex items-center justify-center text-xl shadow-md shadow-emerald-600/30">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div>
+            <h3 class="font-extrabold text-lg sm:text-xl text-slate-900 dark:text-white leading-tight flex items-center gap-2">
+              <span>TEC Aspirants কন্ট্রোল প্যানেল</span>
+              <span class="text-xs px-2.5 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 font-bold border border-emerald-300 dark:border-emerald-800">
+                অ্যাডমিন সেল
+              </span>
+            </h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400">
+              ভলান্টিয়ার আবেদন এক ক্লিকে অনুমোদন, ভলান্টিয়ার নেটওয়ার্ক ও সাইট সেটিংস নিয়ন্ত্রণ
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <!-- Admin Logged In Pill -->
+          <div class="hidden md:flex items-center gap-1.5 px-3 py-1 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 text-[11px] text-emerald-700 dark:text-emerald-300 font-semibold">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span>Ruhul Amin Ikram</span>
+          </div>
+
+          <!-- Admin Logout Button -->
+          <button type="button" 
+                  onclick="handleAdminLogout()" 
+                  title="কন্ট্রোল প্যানেল থেকে লগআউট করুন"
+                  class="px-3 py-1.5 rounded-xl bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/40 dark:hover:bg-rose-900/60 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-800 text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span class="hidden sm:inline">লগআউট</span>
+          </button>
+
+          <button type="button" 
+                  onclick="closeModal('adminControlModal')" 
+                  class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 flex items-center justify-center text-sm transition-colors">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Bar -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 px-6 py-4 bg-slate-100/60 dark:bg-[#13141e] border-b border-slate-200 dark:border-slate-800 text-xs">
+        <div class="p-3 rounded-xl bg-white dark:bg-[#191a26] border border-slate-200 dark:border-slate-800">
+          <span class="text-slate-500 text-[11px] block">অপেক্ষমাণ আবেদন</span>
+          <span id="controlPendingCount" class="text-xl font-black text-rose-500 font-sans">0</span>
+        </div>
+        <div class="p-3 rounded-xl bg-white dark:bg-[#191a26] border border-slate-200 dark:border-slate-800">
+          <span class="text-slate-500 text-[11px] block">সক্রিয় ভলান্টিয়ার</span>
+          <span id="controlActiveCount" class="text-xl font-black text-emerald-500 font-sans">0</span>
+        </div>
+        <div class="p-3 rounded-xl bg-white dark:bg-[#191a26] border border-slate-200 dark:border-slate-800">
+          <span class="text-slate-500 text-[11px] block">মোট টেক্সটাইল কলেজ</span>
+          <span class="text-xl font-black text-blue-500 font-sans">১০টি</span>
+        </div>
+        <div class="p-3 rounded-xl bg-white dark:bg-[#191a26] border border-slate-200 dark:border-slate-800">
+          <span class="text-slate-500 text-[11px] block">কভারেজ নেটওয়ার্ক</span>
+          <span class="text-xl font-black text-amber-500 font-sans">৬৪ জেলা</span>
+        </div>
+      </div>
+
+      <!-- Control Panel Body -->
+      <div class="p-5 sm:p-6 space-y-6 max-h-[70vh] overflow-y-auto">
+        
+        <!-- SECTION 1: PENDING APPLICANTS (1-CLICK APPROVAL) -->
+        <div class="space-y-3">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2 border-b border-slate-200 dark:border-slate-800">
+            <div>
+              <h4 class="font-extrabold text-sm sm:text-base text-slate-900 dark:text-white flex items-center gap-2">
+                <i class="fa-solid fa-user-clock text-amber-500"></i>
+                <span>ক্যাম্পাস ভিত্তিক ভলান্টিয়ার আবেদনসমূহ (অপেক্ষমাণ তালিকা)</span>
+                <span id="controlPendingBadge" class="px-2 py-0.5 rounded-full text-[11px] font-bold bg-rose-100 text-rose-700 dark:bg-rose-950/60 dark:text-rose-300">0</span>
+              </h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                ওয়েবসাইটে কোনো ভিজিটর ফরম পূরণ করলে তা এখানে জমা হয়। 'এক ক্লিকে যুক্ত করুন' বাটনে চাপলে সরাসরি ভলান্টিয়ার তালিকায় যুক্ত হয়ে যাবে।
+              </p>
+            </div>
+            
+            <div class="flex items-center gap-2 shrink-0">
+              <button type="button" 
+                      onclick="openManualAddVolunteerModal()" 
+                      class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold shadow-sm transition-all">
+                <i class="fa-solid fa-user-plus text-xs"></i>
+                <span>সরাসরি ভলান্টিয়ার যুক্ত করুন</span>
+              </button>
+              <button type="button" 
+                      onclick="createDemoPendingApplicant()" 
+                      class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-semibold transition-colors">
+                <i class="fa-solid fa-flask text-amber-500"></i>
+                <span>টেস্ট আবেদন তৈরি</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Pending Applicants Cards Container -->
+          <div id="pendingApplicantsList" class="space-y-3 pt-1">
+            <!-- Rendered dynamically via js/app.js -->
+          </div>
+        </div>
+
+        <!-- SECTION 2: ACTIVE VOLUNTEERS DIRECT OVERVIEW -->
+        <div class="space-y-3 pt-6 border-t border-slate-200 dark:border-slate-800">
+          <div class="flex items-center justify-between">
+            <h4 class="font-extrabold text-sm sm:text-base text-slate-900 dark:text-white flex items-center gap-2">
+              <i class="fa-solid fa-users text-emerald-600"></i>
+              <span>অনুমোদিত ভলান্টিয়ার নেটওয়ার্ক</span>
+            </h4>
+            <span class="text-xs text-slate-500 dark:text-slate-400">রিয়েল-টাইম ডাটাবেজ</span>
+          </div>
+
+          <div id="controlActiveList" class="max-h-60 overflow-y-auto space-y-2 pr-1">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+
+        <!-- SECTION 3: QUICK CONTROLS & SETTINGS -->
+        <div class="pt-6 border-t border-slate-200 dark:border-slate-800 space-y-3">
+          <h4 class="font-extrabold text-sm text-slate-900 dark:text-white flex items-center gap-2">
+            <i class="fa-solid fa-gear text-slate-500"></i>
+            <span>অ্যাডমিন সেটিংস ও ডাটাবেজ ম্যানেজমেন্ট</span>
+          </h4>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <!-- Banner Config Card -->
+            <div class="p-3.5 rounded-2xl bg-slate-50 dark:bg-[#161720] border border-slate-200 dark:border-slate-800 flex flex-col justify-between gap-2.5">
+              <div>
+                <h5 class="text-xs font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
+                  <i class="fa-solid fa-wand-magic-sparkles text-amber-500"></i>
+                  <span>হিরো ব্যানার পরিবর্তন</span>
+                </h5>
+                <p class="text-[11px] text-slate-500 mt-1">ব্যানার ছবি, শিরোনাম ও ৩টি প্রিসেট কাস্টমাইজ করুন।</p>
+              </div>
+              <button type="button" 
+                      onclick="closeModal('adminControlModal'); openModal('bannerModal');" 
+                      class="w-full py-2 px-3 rounded-xl bg-amber-500 hover:bg-amber-600 text-white font-bold text-xs shadow transition-all flex items-center justify-center gap-1.5">
+                <span>ব্যানার কনফিগারেশন</span>
+              </button>
+            </div>
+
+            <!-- PIN Change Card -->
+            <div class="p-3.5 rounded-2xl bg-slate-50 dark:bg-[#161720] border border-slate-200 dark:border-slate-800 flex flex-col justify-between gap-2.5">
+              <div>
+                <h5 class="text-xs font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
+                  <i class="fa-solid fa-key text-emerald-500"></i>
+                  <span>অ্যাডমিন পিন পরিবর্তন</span>
+                </h5>
+                <p class="text-[11px] text-slate-500 mt-1">কন্ট্রোল প্যানেল সুরক্ষার জন্য নতুন গোপন পিন সেট করুন।</p>
+              </div>
+              <button type="button" 
+                      onclick="openChangePinModal()" 
+                      class="w-full py-2 px-3 rounded-xl bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 font-bold text-xs transition-all flex items-center justify-center gap-1.5">
+                <span>পিন পরিবর্তন করুন</span>
+              </button>
+            </div>
+
+            <!-- Database Backup & Restore Card -->
+            <div class="p-3.5 rounded-2xl bg-slate-50 dark:bg-[#161720] border border-slate-200 dark:border-slate-800 flex flex-col justify-between gap-2.5">
+              <div>
+                <h5 class="text-xs font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
+                  <i class="fa-solid fa-database text-blue-500"></i>
+                  <span>ডাটা ব্যাকআপ ও সিঙ্ক</span>
+                </h5>
+                <p class="text-[11px] text-slate-500 mt-1">ভলান্টিয়ার তালিকা ব্যাকআপ রাখুন বা ডিভাইস বদলান।</p>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <button type="button" 
+                        onclick="exportVolunteersJSON()" 
+                        title="সম্পূর্ণ ডাটা JSON ফাইল হিসেবে ডাউনলোড করুন"
+                        class="flex-1 py-2 px-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-[11px] shadow transition-all flex items-center justify-center gap-1">
+                  <i class="fa-solid fa-download"></i>
+                  <span>ব্যাকআপ</span>
+                </button>
+                <button type="button" 
+                        onclick="triggerImportVolunteers()" 
+                        title="পূর্বের ব্যাকআপ JSON ফাইল আপলোড করুন"
+                        class="flex-1 py-2 px-2 rounded-xl bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 font-bold text-[11px] transition-all flex items-center justify-center gap-1">
+                  <i class="fa-solid fa-upload"></i>
+                  <span>রিস্টোর</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="px-6 py-4 bg-slate-50 dark:bg-[#161720] border-t border-slate-200 dark:border-pitch-border flex flex-col sm:flex-row items-center justify-between gap-3">
+        <span class="text-xs text-slate-500 dark:text-slate-400">
+          * অনুমোদিত ভলান্টিয়ারের তথ্য তৎক্ষণাৎ স্বয়ংক্রিয়ভাবে মূল তালিকায় অন্তর্ভুক্ত হয়।
+        </span>
+        <div class="flex items-center gap-2">
+          <button type="button" 
+                  onclick="handleAdminLogout()" 
+                  class="px-4 py-2 rounded-xl bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/40 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-800 text-xs font-bold transition-colors flex items-center gap-1">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>লগআউট</span>
+          </button>
+          <button type="button" 
+                  onclick="closeModal('adminControlModal')" 
+                  class="px-5 py-2 rounded-xl bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-bold transition-colors">
+            প্যানেল বন্ধ করুন
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Hidden File Input for JSON Backup Restore -->
+  <input type="file" id="importVolunteersFileInput" accept=".json" class="hidden" onchange="handleImportVolunteersFile(event)">
+
+  <!-- ======================================================================
+       POPUP MODAL 8: ADMIN AUTHENTICATION / PIN LOGIN (কন্ট্রোল প্যানেল নিরাপত্তা)
+       ====================================================================== -->
+  <div id="adminAuthModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto modal-backdrop bg-black/80 backdrop-blur-md">
+    <div class="relative w-full max-w-md bg-white dark:bg-[#111218] rounded-3xl border border-slate-200 dark:border-pitch-border shadow-2xl overflow-hidden animate-modal-scale my-6">
+      
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between px-6 py-5 border-b border-slate-200 dark:border-pitch-border bg-slate-50 dark:bg-[#161720]">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-2xl bg-slate-900 dark:bg-slate-800 border border-slate-700 text-emerald-400 flex items-center justify-center text-lg shadow-inner">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div>
+            <h3 class="font-extrabold text-base sm:text-lg text-slate-900 dark:text-white leading-tight">
+              অ্যাডমিন ভেরিফিকেশন
+            </h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400">কন্ট্রোল প্যানেল নিরাপত্তা যাচাই</p>
+          </div>
+        </div>
+
+        <button type="button" 
+                onclick="closeModal('adminAuthModal')" 
+                class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 flex items-center justify-center text-sm transition-colors">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Security Notice -->
+      <div class="p-6 space-y-4">
+        <div class="p-3.5 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-600 dark:text-amber-400 text-xs flex items-start gap-2.5">
+          <i class="fa-solid fa-lock text-sm mt-0.5 shrink-0"></i>
+          <div>
+            <span class="font-bold block">শুধুমাত্র অনুমোদিত অ্যাডমিন:</span>
+            <span>এই কন্ট্রোল প্যানেলটি শুধুমাত্র TEC Aspirants অ্যাডমিন সেলের জন্য সংরক্ষিত। সাধারণ কোনো ট্রাফিক এটি নিয়ন্ত্রণ করতে পারবে না।</span>
+          </div>
+        </div>
+
+        <form id="adminAuthForm" onsubmit="handleAdminLoginSubmit(event)" class="space-y-4">
+          <div>
+            <label for="adminPinInput" class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+              সিকিউরিটি পিন কোড (Admin PIN) <span class="text-rose-500">*</span>
+            </label>
+            <div class="relative" id="pinInputContainer">
+              <input type="password" 
+                     id="adminPinInput" 
+                     required
+                     autocomplete="current-password"
+                     placeholder="অ্যাডমিন পিন কোড লিখুন..." 
+                     class="w-full pl-10 pr-10 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-[#1a1b26] text-slate-900 dark:text-white text-sm tracking-wider focus:outline-none focus:ring-2 focus:ring-emerald-500">
+              <i class="fa-solid fa-key absolute left-3.5 top-3.5 text-slate-400 text-xs"></i>
+              <button type="button" 
+                      onclick="togglePinVisibility('adminPinInput', 'pinToggleIcon')" 
+                      class="absolute right-3.5 top-2.5 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-sm p-1">
+                <i id="pinToggleIcon" class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+            <p id="adminAuthError" class="text-xs text-rose-500 font-semibold mt-1.5 hidden flex items-center gap-1">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <span>ভুল পিন কোড! শুধুমাত্র অ্যাডমিন প্রবেশ করতে পারবেন।</span>
+            </p>
+          </div>
+
+          <div class="pt-2 flex items-center gap-2">
+            <button type="submit" 
+                    class="flex-1 py-2.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm shadow-md shadow-emerald-600/30 transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-unlock-keyhole"></i>
+              <span>আনলক করুন (Unlock)</span>
+            </button>
+            <button type="button" 
+                    onclick="closeModal('adminAuthModal')" 
+                    class="py-2.5 px-4 rounded-xl bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs sm:text-sm font-semibold transition-colors">
+              বাতিল
+            </button>
+          </div>
+        </form>
+
+        <div class="pt-2 text-center">
+          <p class="text-[11px] text-slate-400">
+            ডিফল্ট অ্যাডমিন মাস্টার পিন: <strong class="text-slate-600 dark:text-slate-300 font-mono font-bold">1612</strong> (প্যানেলে প্রবেশের পর পরিবর্তনযোগ্য)
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       POPUP MODAL 9: CHANGE ADMIN PIN (পিন পরিবর্তন)
+       ====================================================================== -->
+  <div id="adminChangePinModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto modal-backdrop bg-black/80 backdrop-blur-md">
+    <div class="relative w-full max-w-md bg-white dark:bg-[#111218] rounded-3xl border border-slate-200 dark:border-pitch-border shadow-2xl overflow-hidden animate-modal-scale my-6">
+      
+      <div class="flex items-center justify-between px-6 py-5 border-b border-slate-200 dark:border-pitch-border bg-slate-50 dark:bg-[#161720]">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-lg">
+            <i class="fa-solid fa-key"></i>
+          </div>
+          <div>
+            <h3 class="font-extrabold text-base text-slate-900 dark:text-white leading-tight">
+              অ্যাডমিন পিন পরিবর্তন
+            </h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400">আপনার নিজস্ব নতুন গোপন পিন সেট করুন</p>
+          </div>
+        </div>
+
+        <button type="button" 
+                onclick="closeModal('adminChangePinModal')" 
+                class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 flex items-center justify-center text-sm transition-colors">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <form id="adminChangePinForm" onsubmit="handleChangePinSubmit(event)" class="p-6 space-y-4">
+        <div>
+          <label for="currentPinInput" class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">
+            বর্তমান পিন (Current PIN):
+          </label>
+          <input type="password" 
+                 id="currentPinInput" 
+                 required
+                 class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-[#1a1b26] text-xs font-mono">
+        </div>
+
+        <div>
+          <label for="newPinInput" class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">
+            নতুন গোপন পিন (New PIN):
+          </label>
+          <input type="password" 
+                 id="newPinInput" 
+                 required
+                 minlength="4"
+                 placeholder="কমপক্ষে ৪ অক্ষরের গোপন পিন"
+                 class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-[#1a1b26] text-xs font-mono">
+        </div>
+
+        <div>
+          <label for="confirmNewPinInput" class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">
+            নতুন পিন নিশ্চিত করুন (Confirm New PIN):
+          </label>
+          <input type="password" 
+                 id="confirmNewPinInput" 
+                 required
+                 minlength="4"
+                 placeholder="নতুন পিনটি পুনরায় লিখুন"
+                 class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-[#1a1b26] text-xs font-mono">
+        </div>
+
+        <div class="pt-2 flex items-center gap-2">
+          <button type="submit" 
+                  class="flex-1 py-2.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-md transition-all">
+            পিন সংরক্ষণ করুন
+          </button>
+          <button type="button" 
+                  onclick="closeModal('adminChangePinModal')" 
+                  class="py-2.5 px-4 rounded-xl bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-semibold">
+            বাতিল
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       POPUP MODAL 10: MANUAL ADD VOLUNTEER (অ্যাডমিন সরাসরি ভলান্টিয়ার যুক্ত করুন)
+       ====================================================================== -->
+  <div id="adminManualAddModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto modal-backdrop bg-black/80 backdrop-blur-md">
+    <div class="relative w-full max-w-lg bg-white dark:bg-[#111218] rounded-3xl border border-slate-200 dark:border-pitch-border shadow-2xl overflow-hidden animate-modal-scale my-6">
+      <div class="flex items-center justify-between px-6 py-5 border-b border-slate-200 dark:border-pitch-border bg-slate-50 dark:bg-[#161720]">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-2xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center text-lg">
+            <i class="fa-solid fa-user-plus"></i>
+          </div>
+          <div>
+            <h3 class="font-extrabold text-base text-slate-900 dark:text-white leading-tight">
+              সরাসরি ভলান্টিয়ার যুক্ত করুন
+            </h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400">অ্যাডমিন কর্তৃক অনুমোদিত ভলান্টিয়ার অন্তর্ভুক্তি</p>
+          </div>
+        </div>
+
+        <button type="button" 
+                onclick="closeModal('adminManualAddModal')" 
+                class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 flex items-center justify-center text-sm transition-colors">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <form id="adminManualAddForm" onsubmit="handleManualAddVolunteerSubmit(event)" class="p-6 space-y-3.5">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">ভলান্টিয়ারের নাম <span class="text-rose-500">*</span></label>
+          <input type="text" id="manualName" required placeholder="উদাঃ রুহুল আমিন" class="w-full px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-[#1a1b26] text-xs">
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">ক্যাম্পাস <span class="text-rose-500">*</span></label>
+            <select id="manualCampus" required class="w-full px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-[#1a1b26] text-xs">
+              <option value="CTEC">CTEC (চট্টগ্রাম)</option>
+              <option value="PTEC">PTEC (পাবনা)</option>
+              <option value="TECN">TECN (নোয়াখালী)</option>
+              <option value="BTEC">BTEC (বরিশাল)</option>
+              <option value="JhTEC">JhTEC (ঝিনাইদহ)</option>
+              <option value="RTEC">RTEC (রংপুর)</option>
+              <option value="GTEC">GTEC (গোপালগঞ্জ)</option>
+              <option value="JTEC">JTEC (জামালপুর)</option>
+              <option value="MTEC">MTEC (মাদারীপুর)</option>
+              <option value="STEC">STEC (সিলেট)</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">জেলা</label>
+            <input type="text" id="manualDistrict" placeholder="উদাঃ ঢাকা / বরিশাল" class="w-full px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-[#1a1b26] text-xs">
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">ডিপার্টমেন্ট <span class="text-rose-500">*</span></label>
+            <input type="text" id="manualDept" required placeholder="উদাঃ Apparel Engineering" class="w-full px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-[#1a1b26] text-xs">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">ব্যাচ নম্বর <span class="text-rose-500">*</span></label>
+            <input type="text" id="manualBatch" required placeholder="উদাঃ 16th Batch" class="w-full px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-[#1a1b26] text-xs">
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">মোবাইল / WhatsApp নম্বর <span class="text-rose-500">*</span></label>
+          <input type="tel" id="manualMobile" required placeholder="017xxxxxxxx" class="w-full px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-[#1a1b26] text-xs font-mono">
+        </div>
+        <div class="pt-3 flex items-center gap-2">
+          <button type="submit" class="flex-1 py-2.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-md transition-all">
+            সরাসরি যুক্ত করুন
+          </button>
+          <button type="button" onclick="closeModal('adminManualAddModal')" class="py-2.5 px-4 rounded-xl bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-semibold">
+            বাতিল
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       POPUP MODAL 11: VOLUNTEER SUBMISSION SUCCESS & WHATSAPP NOTIFICATION
+       ====================================================================== -->
+  <div id="volunteerSuccessModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto modal-backdrop bg-black/80 backdrop-blur-md">
+    <div class="relative w-full max-w-md bg-white dark:bg-[#111218] rounded-3xl border border-slate-200 dark:border-pitch-border shadow-2xl overflow-hidden animate-modal-scale my-6">
+      
+      <div class="p-6 text-center space-y-4">
+        <div class="w-16 h-16 rounded-3xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 mx-auto flex items-center justify-center text-3xl shadow-lg shadow-emerald-500/20">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+
+        <div>
+          <h3 class="font-extrabold text-xl text-slate-900 dark:text-white">আবেদন সফলভাবে গৃহীত হয়েছে!</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">
+            আপনার ভলান্টিয়ার আবেদনটি TEC Aspirants অ্যাডমিন সেলে জমা দেওয়া হয়েছে।
+          </p>
+        </div>
+
+        <div id="volunteerSuccessDetails" class="p-4 rounded-2xl bg-slate-50 dark:bg-[#161720] border border-slate-200 dark:border-slate-800 text-left text-xs space-y-1.5 text-slate-700 dark:text-slate-300">
+          <!-- Dynamically populated -->
+        </div>
+
+        <div class="p-3.5 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-700 dark:text-emerald-300 text-xs">
+          <p class="font-bold mb-1">⚡ দ্রুত অনুমোদনের জন্য:</p>
+          <p class="text-[11px] leading-relaxed">
+            এক ক্লিকে আপনার আবেদনের তথ্য সেন্ট্রাল অ্যাডমিন ইকরাম ভাইয়ের হোয়াটসঅ্যাপে পাঠিয়ে দিন, যাতে অবিলম্বে অনুমোদন সম্পন্ন করা যায়।
+          </p>
+        </div>
+
+        <div class="space-y-2 pt-2">
+          <a id="successWhatsAppBtn" 
+             href="#" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm shadow-lg shadow-emerald-600/30 transition-all flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>অ্যাডমিনকে হোয়াটসঅ্যাপে আবেদন জানান</span>
+          </a>
+
+          <button type="button" 
+                  onclick="closeModal('volunteerSuccessModal')" 
+                  class="w-full py-2.5 px-4 rounded-xl bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-semibold transition-colors">
+            প্যানেল বন্ধ করুন
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MOBILE BOTTOM QUICK NAVIGATION DOCK (Native App Feel, md:hidden)
+       Thumb-friendly access to all core desktop functions on smartphone
+       ====================================================================== -->
+  <nav id="mobileBottomNav" 
+       class="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-white/95 dark:bg-[#090a0f]/95 backdrop-blur-xl border-t border-slate-200/90 dark:border-pitch-border shadow-[0_-4px_25px_rgba(0,0,0,0.12)] px-2 py-1.5 transition-all">
+    <div class="max-w-md mx-auto grid grid-cols-5 items-center justify-around gap-1 text-center">
+      
+      <!-- Tab 1: Home / Top -->
+      <a href="#" 
+         class="flex flex-col items-center justify-center py-1 px-1 rounded-xl text-slate-600 hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-400 transition-colors group">
+        <i class="fa-solid fa-house text-base group-hover:scale-110 transition-transform"></i>
+        <span class="text-[10px] font-bold mt-0.5 leading-tight">হোম</span>
+      </a>
+
+      <!-- Tab 2: কলেজ পছন্দ -->
+      <button type="button" 
+              onclick="openModal('collegeChoiceModal')" 
+              class="flex flex-col items-center justify-center py-1 px-1 rounded-xl text-slate-600 hover:text-amber-600 dark:text-slate-400 dark:hover:text-amber-400 transition-colors group">
+        <i class="fa-solid fa-list-check text-base text-amber-500 group-hover:scale-110 transition-transform"></i>
+        <span class="text-[10px] font-bold mt-0.5 leading-tight">পছন্দ তালিকা</span>
+      </button>
+
+      <!-- Tab 3: যোগ্যতা যাচাই -->
+      <button type="button" 
+              onclick="openModal('eligibilityModal')" 
+              class="flex flex-col items-center justify-center py-1 px-1 rounded-xl text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 transition-colors group">
+        <i class="fa-solid fa-file-pdf text-base text-blue-500 group-hover:scale-110 transition-transform"></i>
+        <span class="text-[10px] font-bold mt-0.5 leading-tight">যোগ্যতা</span>
+      </button>
+
+      <!-- Tab 4: ভলান্টিয়ার -->
+      <button type="button" 
+              onclick="openModal('volunteerSearchModal')" 
+              class="flex flex-col items-center justify-center py-1 px-1 rounded-xl text-slate-600 hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-400 transition-colors group">
+        <i class="fa-solid fa-users-viewfinder text-base text-emerald-500 group-hover:scale-110 transition-transform"></i>
+        <span class="text-[10px] font-bold mt-0.5 leading-tight">ভলান্টিয়ার</span>
+      </button>
+
+      <!-- Tab 5: অ্যাডমিন -->
+      <button type="button" 
+              id="bottomNavAdminBtn"
+              onclick="handleAdminAccess()" 
+              class="relative flex flex-col items-center justify-center py-1 px-1 rounded-xl text-slate-600 hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-400 transition-colors group">
+        <i id="bottomNavAdminIcon" class="fa-solid fa-lock text-base text-slate-400 group-hover:scale-110 transition-transform"></i>
+        <span id="bottomNavPendingBadge" class="hidden absolute top-0 right-2 px-1 py-0.2 min-w-[15px] rounded-full bg-rose-500 text-white text-[9px] font-bold leading-none animate-pulse">0</span>
+        <span class="text-[10px] font-bold mt-0.5 leading-tight">অ্যাডমিন</span>
+      </button>
+
+    </div>
+  </nav>
+
+  <div id="toastContainer" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 max-w-sm pointer-events-none"></div>
+
+  <!-- JavaScript Modules in Execution Order -->
+  <script src="js/data.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
